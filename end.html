@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="stylequiz.css">
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="quiz">
+       <div class="header">
+       
+       
+       </div>
+       <div class="quiz-body">
+        <div class="tt">
+        <p ><h1>Your Score: <span class="pointspan"></span></h1></p>
+        </div>
+        <div class="quiz-body-2">
+          <p><h3 class="desspan"></h3></p>
+        </div>
+        
+        
+       </div>
+      </div>
+    </div>
+<script>
+     var score;
+     var des;
+   let pointsres = sessionStorage.getItem("respoints");
+   if ( pointsres>=0 && pointsres<=3) {
+    score ="No Depression";
+    des= "  Thanks for taking time to complete the questions. While you might be feeling down right now, you’re not showing signs of depression. Those low feelings should go away as the problem passes.";
+}
+if ( pointsres>=4 && pointsres<=9) {
+    score ="Mild Indication of Depression ";
+    des= " Your score shows you have some signs that may indicate depression. If you’re dealing with some hard things that are making you feel down right now, that’s pretty normal.  Things should look up as you deal with them, but you should keep an eye on it and definitely check out some of the helpful information on this website.";
+
+}
+if ( pointsres>=10 && pointsres<=14) {
+    score ="Moderate Depression";
+    des= "Thanks for taking time to complete the questions. It sounds like you’re finding life a bit tough right now and it looks like you’re experiencing some symptoms of mild depression which is really common (it affects one in five New Zealanders). The good news is this will almost certainly pass and there are many things you can do to turn it around. The sooner you take some action, the sooner you’ll be on the road to recovery.";
+}
+if ( pointsres>=14 && pointsres<=18) {
+    score ="Severe Depression";
+    des= "If you’re having thoughts most days about hurting or killing yourself please reach out straight away and talk to someone who’s trained to help. Even if you feel like no-one in the world gets you right now, there are people who can support you. These thoughts are common in depression but if you find they are getting more frequent (most days) or you feel more like acting on them - call us straight away.";
+}
+
+   document.querySelector(".pointspan").innerHTML=score;
+   document.querySelector(".desspan").innerHTML=des;
+   
+</script>
+</body>
+</html>
