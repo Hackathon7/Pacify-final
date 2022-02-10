@@ -41,4 +41,6 @@ is not healthy for your mind to work for long periods of time without a break. U
 - Chat-bot
 - Many more relevant features on acceptance
 
+## License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
