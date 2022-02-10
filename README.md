@@ -41,6 +41,4 @@ is not healthy for your mind to work for long periods of time without a break. U
 - Chat-bot
 - Many more relevant features on acceptance
 
-## Project Images
 
-![alt text](https://github.com/Hackathon7/Pacify-final/blob/main/Screenshot1.png?raw=true)
