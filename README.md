@@ -39,6 +39,7 @@ is not healthy for your mind to work for long periods of time without a break. U
 - Any new feature 
 - Add sign-up form
 - Chat-bot
+- Add backend
 - Many more relevant features on acceptance
 
 ## License
