@@ -1,148 +1,159 @@
-'use strict';
+let breakLengthValue;
+let sessionLengthValue;
+let minutesTimeLeftValue;
+let secondsTimeLeftValue;
 
-var countdown;
-var delay = 1000;
+const breakLength = document.getElementById("break-length");
+const breakDecrement = document.getElementById("break-decrement");
+const breakIncrement = document.getElementById("break-increment");
+let breakStart = false;
 
-var session = 25;
-var rest = 5;
-var sessionSeconds = session * 60;
-var restSeconds = rest * 60;
+const sessionLength = document.getElementById("session-length");
+const sessionDecrement = document.getElementById("session-decrement");
+const sessionIncrement = document.getElementById("session-increment");
 
-var audioSession = new Audio('http://www.oringz.com/oringz-uploads/sounds-948-just-like-magic.mp3');
-var audioBreak = new Audio('http://www.oringz.com/oringz-uploads/sounds-882-solemn.mp3');
+const timerLabel = document.getElementById("timer-label");
+const timeLeft = document.getElementById("time-left");
+let timerActive = false;
 
-var sessionMinutes = document.getElementById('sessionMinutes'),
-  sessionMinus = document.getElementById('sessionMinus'),
-  sessionPlus = document.getElementById('sessionPlus'),
-  breakMinutes = document.getElementById('breakMinutes'),
-  breakMinus = document.getElementById('breakMinus'),
-  breakPlus = document.getElementById('breakPlus'),
-  timer = document.getElementById('timer'),
-  startSessionButton = document.getElementById('start'),
-  pauseSessionButton = document.getElementById('pause'),
-  resetSessionButton = document.getElementById('reset'),
-  startBreakButton = document.getElementById('startBreak'),
-  pauseBreakButton = document.getElementById('pauseBreak'),
-  resetBreakButton = document.getElementById('resetBreak');
+const startStop = document.getElementById("start_stop");
+const reset = document.getElementById("reset");
 
-sessionMinutes.innerHTML = ' ' + session + ' ';
-breakMinutes.innerHTML = ' ' + rest + ' ';
-timer.innerHTML = session + ':00';
-displaySession('', 'none', 'none');
-displayBreak('none', 'none', 'none');
+let mycountDown;
 
-function startCountdown(seconds) {
-  var minutes = parseInt(seconds / 60);
-  var remainingSeconds = seconds % 60;
-  if (remainingSeconds < 10) remainingSeconds = '0' + remainingSeconds;
-  timer.innerHTML = minutes + ':' + remainingSeconds;
+const beep = document.getElementById("beep");
+
+const buttons = document.querySelectorAll("button");
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    buttons[i].classList.add("active");
+    setTimeout(() => buttons[i].classList.remove("active"), 150);
+  });
 }
 
-function startSession() {
-  audioSession.play();
-  timer.innerHTML = 'session';
-  clearInterval(countdown);
-  countdown = setInterval(function() {
-    startCountdown(sessionSeconds);
+window.onload = function () {
+  resetValues();
+};
 
-    if (sessionSeconds === 0) {
-      clearInterval(countdown);
-      restSeconds = rest * 60;
-      displaySession('none', 'none', 'none');
-      startBreak();
-    } else sessionSeconds--;
-  }, delay);
-  displaySession('none', '', '');
+function resetValues() {
+  if (mycountDown !== undefined) clearInterval(mycountDown);
+  beep.pause();
+  beep.currentTime = 0;
+  timerLabel.innerHTML = "Session";
+  timerActive = false;
+  breakLengthValue = 5;
+  sessionLengthValue = 25;
+  minutesTimeLeftValue = sessionLengthValue;
+  secondsTimeLeftValue = 0;
+
+  timeLeft.innerHTML = `${minutesTimeLeftValue}:${secondsTimeLeftValue}0`;
+  breakLength.innerHTML = breakLengthValue;
+  sessionLength.innerHTML = sessionLengthValue;
 }
 
-function startBreak() {
-  audioBreak.play();
-  timer.innerHTML = 'break';
-  clearInterval(countdown);
-  countdown = setInterval(function() {
-    startCountdown(restSeconds);
+breakDecrement.addEventListener("click", function () {
+  if (!timerActive) {
+    if (breakLengthValue > 1) {
+      breakLengthValue--;
+    }
+    breakLength.innerHTML = breakLengthValue;
+  }
+});
 
-    if (restSeconds === 0) {
-      clearInterval(countdown);
-      sessionSeconds = session * 60;
-      displayBreak('none', 'none', 'none');
-      startSession();
-    } else restSeconds--;
-  }, delay);
-  displayBreak('none', '', '');
+breakIncrement.addEventListener("click", function () {
+  if (!timerActive) {
+    if (breakLengthValue < 60) {
+      breakLengthValue++;
+    }
+    breakLength.innerHTML = breakLengthValue;
+  }
+});
+
+sessionDecrement.addEventListener("click", function () {
+  if (!timerActive) {
+    if (sessionLengthValue > 1) {
+      sessionLengthValue--;
+      minutesTimeLeftValue--;
+      sessionLength.innerHTML = sessionLengthValue;
+    }
+    setTimerValue();
+  }
+});
+
+sessionIncrement.addEventListener("click", function () {
+  if (!timerActive) {
+    if (sessionLengthValue < 60) {
+      sessionLengthValue++;
+      minutesTimeLeftValue++;
+      sessionLength.innerHTML = sessionLengthValue;
+    }
+    setTimerValue();
+  }
+});
+
+function setTimerValue() {
+  if (breakStart) {
+    timerLabel.innerHTML = "Break";
+    minutesTimeLeftValue = breakLengthValue;
+  } else {
+    timerLabel.innerHTML = "Session";
+    minutesTimeLeftValue = sessionLengthValue;
+  }
+
+  minutesTimeLeftValue =
+    minutesTimeLeftValue < 10
+      ? "0" + minutesTimeLeftValue
+      : minutesTimeLeftValue;
+
+  timeLeft.innerHTML = `${minutesTimeLeftValue}:00`;
 }
 
-function pauseSession() {
-  clearInterval(countdown);
-  displaySession('', 'none', 'none');
-  startSessionButton.innerHTML = 'resume';
+reset.addEventListener("click", resetValues);
+startStop.addEventListener("click", startStopTimer);
+
+function startStopTimer() {
+  timerActive = !timerActive;
+
+  if (timerActive) {
+    mycountDown = setInterval(() => {
+      countDown();
+    }, 1000);
+  } else {
+    clearInterval(mycountDown);
+  }
 }
 
-function pauseBreak() {
-  clearInterval(countdown);
-  displayBreak('', 'none', 'none');
-  startBreakButton.innerHTML = 'resume';
-}
+function countDown() {
+  let zeroMinutes = "";
+  let zeroSeconds = "";
 
-function resetSession() {
-  pauseSession();
-  sessionSeconds = session * 60;
-  timer.innerHTML = session + ':00';
-  startSessionButton.innerHTML = 'start';
-}
+  if (secondsTimeLeftValue === 0) {
+    secondsTimeLeftValue = 60;
+    minutesTimeLeftValue--;
+  }
 
-function resetBreak() {
-  pauseBreak();
-  restSeconds = rest * 60;
-  timer.innerHTML = rest + ':00';
-  startBreakButton.innerHTML = 'start';
-}
+  secondsTimeLeftValue--;
 
-function subtractSession() {
-  session--;
-  if (session < 0) session = 0;
-  sessionSeconds = session * 60;
-  sessionMinutes.innerHTML = ' ' + session + ' ';
-}
+  if (minutesTimeLeftValue < 10) zeroMinutes = "0";
+  if (secondsTimeLeftValue < 10) zeroSeconds = "0";
 
-function subtractBreak() {
-  rest--;
-  if (rest < 0) rest = 0;
-  restSeconds = rest * 60;
-  breakMinutes.innerHTML = ' ' + rest + ' ';
-}
+  timeLeft.innerHTML = `${zeroMinutes}${minutesTimeLeftValue}:${zeroSeconds}${secondsTimeLeftValue}`;
 
-function addSession() {
-  session++;
-  sessionSeconds = session * 60;
-  sessionMinutes.innerHTML = ' ' + session + ' ';
+  if (minutesTimeLeftValue === 0 && secondsTimeLeftValue === 0) {
+    clearInterval(mycountDown);
+    beep.play();
+    if (!breakStart) {
+      breakStart = true;
+      breakLengthValue = breakLength.innerHTML;
+    } else {
+      breakStart = false;
+      sessionLengthValue = sessionLength.innerHTML;
+    }
+    setTimeout(() => {
+      setTimerValue();
+      timerActive = false;
+      startStopTimer();
+    }, 4000);
+  }
 }
-
-function addBreak() {
-  rest++;
-  restSeconds = rest * 60;
-  breakMinutes.innerHTML = ' ' + rest + ' ';
-}
-
-function displaySession(start, pause, reset) {
-  startSessionButton.style.display = start;
-  pauseSessionButton.style.display = pause;
-  resetSessionButton.style.display = reset;
-}
-
-function displayBreak(start, pause, reset) {
-  startBreakButton.style.display = start;
-  pauseBreakButton.style.display = pause;
-  resetBreakButton.style.display = reset;
-}
-
-sessionMinus.addEventListener('click', subtractSession);
-sessionPlus.addEventListener('click', addSession);
-breakMinus.addEventListener('click', subtractBreak);
-breakPlus.addEventListener('click', addBreak);
-startSessionButton.addEventListener('click', startSession);
-pauseSessionButton.addEventListener('click', pauseSession);
-resetSessionButton.addEventListener('click', resetSession);
-startBreakButton.addEventListener('click', startBreak);
-pauseBreakButton.addEventListener('click', pauseBreak);
-resetBreakButton.addEventListener('click', resetBreak);

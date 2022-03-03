@@ -1,39 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Pomodoro Timer</title>
-    <link href="pomodoro_timer.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="pomodoro.css" />
+    <script src="https://use.fontawesome.com/e35c5c4343.js"></script>
   </head>
   <body>
-
-    <div class='wrapper'>
-      <div class='align-wrap'>
-        <div class='align'>
-          <div class='group'>
-            <div class='left'>
-              <h3 class='break'>break</h3>
-              <h2><a id='breakMinus' href="#">-</a><span id='breakMinutes'></span><a id='breakPlus' href="#">+</a></h2>
-            </div>
-            <div class='right'>
-              <h3 class='session'>session</h3>
-              <h2><a id='sessionMinus' href="#">-</a><span id='sessionMinutes'></span><a id='sessionPlus' href="#">+</a></h2>
-            </div>
-          </div>
-          <div class='clock'>
-            <h1 class='timer' id='timer'></h1>
-            <button class='button' id='start'>start</button>
-            <button class='button left' id='pause'>pause</button>
-            <button class='button right' id='reset'>reset</button>
-            <button class='button' id='startBreak'>start</button>
-            <button class='button left' id='pauseBreak'>pause</button>
-            <button class='button right' id='resetBreak'>reset</button>
-          </div>
-        </div>
+    <div class="pomodoro-clock">
+      <!-- <h1 class="pomodoro-clock__tittle">
+        Pomodoro<br />Clock<br /><i
+          class="pomodoro-clock__tittle-icon fa fa-hourglass-o"
+          aria-hidden="true"
+        ></i>
+      </h1> -->
+      <div class="pomodoro-clock__break-container">
+        <h2 id="break-label" class="pomodoro-clock__break-label">
+          <span>Break</span><br />Length
+        </h2>
+        <button
+          id="break-decrement"
+          class="pomodoro-clock__control-button"
+          aria-label="substract one minute to break lenght"
+        >
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </button>
+        <div id="break-length" class="pomodoro-clock__break-length">--</div>
+        <button
+          id="break-increment"
+          class="pomodoro-clock__control-button"
+          aria-label="add one minute to break lenght"
+        >
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
       </div>
+      <div class="pomodoro-clock__sesion-container">
+        <h2 id="session-label" class="pomodoro-clock__session-label">
+          <span>Session</span><br />Length
+        </h2>
+        <button
+          id="session-decrement"
+          class="pomodoro-clock__control-button"
+          aria-label="substract one minute to session lenght"
+        >
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </button>
+        <div id="session-length" class="pomodoro-clock__session-length">--</div>
+        <button
+          id="session-increment"
+          class="pomodoro-clock__control-button"
+          aria-label="add one minute to session lenght"
+        >
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="pomodoro-clock__timer-container">
+        <h2 id="timer-label" class="pomodoro-clock__timer-label">Session</h2>
+        <div id="time-left" class="pomodoro-clock__time-left">--:--</div>
+        <button id="start_stop" class="pomodoro-clock__start-stop-button">
+          start / stop
+        </button>
+        <button id="reset" class="pomodoro-clock__reset-button">reset</button>
+      </div>
+      <audio
+        id="beep"
+        preload="auto"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
+      ></audio>
+      <script src="pomodoro-timer.js"></script>
     </div>
-
-    <script src="pomodoro-timer.js"></script>
   </body>
 </html>
