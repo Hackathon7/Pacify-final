@@ -60,7 +60,7 @@ is not healthy for your mind to work for long periods of time without a break. U
 **_Quiz_:**
 ![](Screenshot4.png)
 
-## Project Admins
+## Project Maintainers
 
 <div>
 <table>
