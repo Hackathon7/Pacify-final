@@ -60,3 +60,15 @@ is not healthy for your mind to work for long periods of time without a break. U
 **_Quiz_:**
 ![](Screenshot4.png)
 
+## Project Admins
+
+<div>
+<table>
+  <tbody><tr>
+     <td align="center"><a href="https://github.com/mp3730"><img alt="" src="https://avatars.githubusercontent.com/mp3730" width="130px;"><br><sub><b> Mansi Prajapati </b></sub></a><br></td> </a></td>
+     <td align="center"><a href="https://github.com/srai0109"><img alt="" src="https://avatars.githubusercontent.com/srai0109" width="130px;"><br><sub><b> Shikha Rai </b></sub></a><br></td> </a></td>
+     <td align="center"><a href="https://github.com/vartika0605"><img alt="" src="https://avatars.githubusercontent.com/vartika0605" width="130px;"><br><sub><b> Vartika Gupta </b></sub></a><br></td> </a></td>
+     <td align="center"><a href="https://github.com/Tvisha07"><img alt="" src="https://avatars.githubusercontent.com/Tvisha07" width="130px;"><br><sub><b> Tvisha Srivastava </b></sub></a><br></td> </a></td>
+  </tr>
+</tbody></table>
+</div>
