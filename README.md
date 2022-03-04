@@ -49,16 +49,16 @@ is not healthy for your mind to work for long periods of time without a break. U
 ## Project Images
 
 **_Home Page_:**
-![](Screenshot1.png)
+![](image/Screenshot1.png)
 
 **_Features_:**
-![](Screenshot2.png)
+![](image/Screenshot2.png)
 
 **_Articles_:**
-![](Screenshot3.png)
+![](image/Screenshot3.png)
 
 **_Quiz_:**
-![](Screenshot4.png)
+![](image/Screenshot4.png)
 
 ## Project Maintainers
 
