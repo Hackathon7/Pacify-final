@@ -1068,12 +1068,24 @@ a:focus {
 /*******************************/
 /******* Single Post CSS *******/
 /*******************************/
+
+.about-img {
+  text-align: center;
+}
+
+img {
+  width: 60%;
+  vertical-align: middle;
+  border-style: none;
+}
+
 .single {
   position: relative;
-  padding: 45px 0;
+  padding: 45px 60px 0 60px;
 }
 
 .single .single-content {
+  padding: 0 30px 0px 30px;
   position: relative;
   margin-bottom: 30px;
   overflow: hidden;
