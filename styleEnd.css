@@ -11,13 +11,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  /* background: #006622; */
-}
-.quiz-header{
-  text-align: center;
-  color: #006622;
-  margin-bottom: 0;
-  margin-top: 10px;
+  background: #7bdd9c;
 }
 .quiz{
 background: white;
@@ -81,11 +75,8 @@ background: white;
   margin-bottom: 15px;
 }
 
-#questions{
-  color: #006622;
-}
 .nextQues{
-  background:#3dc76b;
+  background:#006622;
   color: white;
   border-radius: 30px;
   margin-left: 50px;
@@ -98,24 +89,20 @@ background: white;
   color: #006622;
   border: none;
 }
-.nextQues.active{
-  border: none;
-}
 
 .option:hover{
-  /* border:1.5px solid #7bdd9c; */
-  background: #7bdd9c;
+  border:2px solid #006622;
   cursor: pointer;
 }
  .option.active{
-  background: #7bdd9c !important;
+  background: #006622 !important;
   color:#fff !important;
 }
 .end{
   position: relative;
   width: 100vw;
   height: 100vh;
-  /* background: #006622; */
+  background: #006622;
 }
 .content{
   color: white;
@@ -143,18 +130,72 @@ background: white;
   background: #E6FFEE;
 }
 
+#returnHome{
+  border: none;
+  background:#3dc76b;
+  color: white;
+  border-radius: 30px;
+  margin-left: 40%;
+  font-size: 1rem;
+  padding: 5px 10px 5px 10px;
+}
+#returnHome:hover{
+  background:white;
+  color: #006622;
+  border: none;
+}
+
+.score{
+  font-size: 1.75rem;
+}
+
 
 @media(max-width:717px){
  .option{
    width: 80%;
  }
 }
+@media(min-width:650px) and (max-width:820px){
+    .main{
+     
+        width: 100%;
+        height: 100%;
+        background: #7bdd9c;
+      }
+    .quiz-body-2{
+        padding: 2rem;
+        width: 80%;
+    }
+    .header{
+        background: #7bdd9c ;
+    }
+}
 
 @media(max-width:650px){
-  .content{
-    width: max-content;
-  }
+    .header{
+        display: none;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: #7bdd9c;
+      }
+      .quiz-body{
+          background: #7bdd9c;
+          
+      }
+      .quiz{
+      background: white;
+        display: grid;
+        grid-template-rows: 60px auto;
+        width: 70%;
+        height:90%;
+      }
   .quiz-body-2{
+      padding: 2rem;
     width: 80%;
   }
  }
