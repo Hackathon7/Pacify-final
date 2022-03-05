@@ -83,7 +83,6 @@ function show(i) {
 
   document.getElementById("questions").innerHTML = `
   <h2 class="pl-5">Q${i + 1}.${questions[i].question}</h2>
-  <br><br>
   <ul>
     <li class="option">${questions[i].options[0]}</li>
     <li class="option">${questions[i].options[1]}</li>

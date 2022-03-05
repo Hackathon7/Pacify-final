@@ -90,11 +90,13 @@ body {
   width: 75px;
   /* padding: 25px; */
   margin-left: 45%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 #questions {
   color: #006622;
+  margin-bottom: 5%;
+  padding-bottom: 15px;
 }
 
 .nextQues {
@@ -193,4 +195,8 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(20, 49, 14);
+}
+
+.pl-5 {
+  margin-bottom: 5%;
 }
