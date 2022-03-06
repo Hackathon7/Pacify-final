@@ -18,6 +18,14 @@ a {
   transition: 0.3s;
 }
 
+a .nav-item .nav-link{
+  margin-right: 2%;
+}
+
+#navbarCollapse {
+  margin-right: 0% !important;
+}
+
 a:hover,
 a:active,
 a:focus {
@@ -155,27 +163,33 @@ a:focus {
 
 /* top-div-2 */
 
-.top-div-2{
+.top-div-2 {
 
   margin-top: 100px;
-  background-color:#b3e283; /* Used if the image is unavailable */
-  background-image: url("Pacify-background.jpg");  /* The image used */
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  
+  background-color: #b3e283;
+  /* Used if the image is unavailable */
+  background-image: url("Pacify-background.jpg");
+  /* The image used */
+  height: 500px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+
 }
 
-.top-div-2 p{
-  
+.top-div-2 p {
+
   font-size: 2.5rem;
   font-weight: 900;
-  color:rgb(51, 48, 48);
+  color: rgb(51, 48, 48);
   text-align: center;
   margin-top: 40px;
   text-decoration: underline;
- 
+
 }
 
 /**********************************/
@@ -252,7 +266,7 @@ a:focus {
     z-index: 9;
   }
 
-  .navbar.nav-sticky{
+  .navbar.nav-sticky {
     padding: 10px 60px;
     background: #006622 !important;
   }
@@ -292,9 +306,9 @@ a:focus {
   width: 100%;
   margin-bottom: 45px;
   padding: 90px 0;
-  background: #e6ffee;  
+  background: #e6ffee;
   overflow: hidden;
- 
+
 }
 
 .hero .container-fluid {
@@ -597,7 +611,8 @@ div.hero-btn {
   border: 1px solid rgba(0, 0, 0, 0.07);
   transition: 0.3s;
 }
-.service .third{
+
+.service .third {
   padding-bottom: 53.5px;
 }
 
@@ -671,16 +686,20 @@ div.hero-btn {
 .text-align-feature {
   text-align: left;
 }
-.service-item{
+
+.service-item {
   transition: all 0.2s ease-in;
 }
-.service-item:hover{
+
+.service-item:hover {
   transform: translateY(-50px);
- 
+
 }
-.text-align-feature:hover{
+
+.text-align-feature:hover {
   color: #006622;
 }
+
 .service .service-item h3 {
   margin-bottom: 15px;
   font-size: 20px;
@@ -900,14 +919,17 @@ div.hero-btn {
   color: #343148;
   transition: 0.3s;
 }
-.blog-item{
+
+.blog-item {
   padding: 5px;
 }
-.blog-item:hover{
-background-color: hsl(135, 59%, 56%);
-color: #ffffff;
-border-radius: 2%;
+
+.blog-item:hover {
+  background-color: hsl(135, 59%, 56%);
+  color: #ffffff;
+  border-radius: 2%;
 }
+
 .blog .blog-item a.btn i {
   margin-left: 5px;
 }
@@ -1397,7 +1419,7 @@ img {
   .sidebar {
     margin-top: 45px;
   }
-  
+
 
 }
 
@@ -1566,25 +1588,31 @@ img {
   background: #006622;
 
 }
-.social-icon{
+
+.social-icon {
   color: #fff;
   margin-left: 10px;
 }
-a.social-icon:hover{
+
+a.social-icon:hover {
   color: #fff;
 }
-.footer .icons{
+
+.footer .icons {
   text-align: center;
   font-size: 1.5rem;
 
 }
-.footer .copyright{
+
+.footer .copyright {
   text-align: center;
   margin-top: 20px;
 }
-.footer .team{
+
+.footer .team {
   text-align: right;
 }
+
 .footer .container-fluid {
   padding: 90px 0 0 0;
   background: linear-gradient(rgba(52, 49, 72, 0.9), rgba(52, 49, 72, 0.9)),
