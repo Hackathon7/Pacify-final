@@ -5,6 +5,9 @@ body {
   background: #7bdd9c;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 .main{
   display: flex;
   justify-content: center;
