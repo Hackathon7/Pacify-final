@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   color: #797979;
   background: #ffffff;
@@ -16,6 +19,14 @@ h6 {
 a {
   color: #454545;
   transition: 0.3s;
+}
+
+a .nav-item .nav-link{
+  margin-right: 2%;
+}
+
+#navbarCollapse {
+  margin-right: 0% !important;
 }
 
 a:hover,
@@ -153,9 +164,41 @@ a:focus {
   }
 }
 
+/* top-div-2 */
+
+.top-div-2 {
+
+  margin-top: 100px;
+  background-color: #b3e283;
+  /* Used if the image is unavailable */
+  background-image: url("Pacify-background.jpg");
+  /* The image used */
+  height: 500px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+
+}
+
+.top-div-2 p {
+
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgb(51, 48, 48);
+  text-align: center;
+  margin-top: 40px;
+  text-decoration: underline;
+
+}
+
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
+
 .navbar {
   position: relative;
   transition: 0.5s;
@@ -268,6 +311,7 @@ a:focus {
   padding: 90px 0;
   background: #e6ffee;
   overflow: hidden;
+
 }
 
 .hero .container-fluid {
@@ -276,11 +320,12 @@ a:focus {
 
 .hero .hero-image {
   position: relative;
-  height: 500px;
-  width: 490px;
+  height: 600px;
+  width: 600px;
   text-align: right;
   margin-right: 35px;
-  padding-top: 2rem;
+  padding-top: 130px;
+  padding-right: 30px;
 }
 
 .hero .hero-image img {
@@ -296,7 +341,7 @@ a:focus {
 }
 
 .hero .hero-text h1 {
-  text-align: center;
+  text-align: left;
   color: #343148;
   font-size: 60px;
   font-weight: 700;
@@ -304,14 +349,14 @@ a:focus {
 }
 
 .hero .hero-text p {
-  text-align: center;
+  text-align: left;
   color: #343148;
   font-size: 25px;
   margin-bottom: 25px;
 }
 
-.hero .hero-btn .btn {
-  text-align: center;
+div.hero-btn {
+  text-align: left;
   font-weight: 600;
   /* padding: 12px 20px;
     font-size: 18px;
@@ -405,6 +450,43 @@ a:focus {
   color: #343148;
   font-size: 60px;
   font-weight: 700;
+}
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
 }
 
 .page-header a {
@@ -500,7 +582,7 @@ a:focus {
 .about {
   position: relative;
   width: 100%;
-  padding: 45px 0;
+  padding: 80px 0;
 }
 
 .about .section-header {
@@ -508,21 +590,20 @@ a:focus {
   margin-left: 0;
 }
 
-.about .about-img {
-  position: relative;
-  height: 100%;
-}
+
 
 .about .about-img img {
   position: relative;
   border-radius: 100%;
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
+  margin-right: 50px;
 }
 
 .about .about-text p {
   font-size: 16px;
+  text-align: left;
 }
 
 .about .about-text a.btn {
@@ -558,6 +639,7 @@ a:focus {
   position: relative;
   width: 100%;
   padding: 45px 0 15px 0;
+  background: #e6ffee;
 }
 
 .service .service-item {
@@ -568,6 +650,10 @@ a:focus {
   padding: 30px;
   border: 1px solid rgba(0, 0, 0, 0.07);
   transition: 0.3s;
+}
+
+.service .third {
+  padding-bottom: 53.5px;
 }
 
 .service .service-item:hover,
@@ -639,6 +725,19 @@ a:focus {
 
 .text-align-feature {
   text-align: left;
+}
+
+.service-item {
+  transition: all 0.2s ease-in;
+}
+
+.service-item:hover {
+  transform: translateY(-50px);
+
+}
+
+.text-align-feature:hover {
+  color: #006622;
 }
 
 .service .service-item h3 {
@@ -806,6 +905,7 @@ a:focus {
   position: relative;
   width: 100%;
   padding: 45px 0;
+  background: #e6ffee;
 }
 
 .blog .blog-carousel {
@@ -860,6 +960,16 @@ a:focus {
   transition: 0.3s;
 }
 
+.blog-item {
+  padding: 5px;
+}
+
+.blog-item:hover {
+  background-color: hsl(135, 59%, 56%);
+  color: #ffffff;
+  border-radius: 2%;
+}
+
 .blog .blog-item a.btn i {
   margin-left: 5px;
 }
@@ -902,7 +1012,7 @@ a:focus {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background: #006622;
+  background: #505050;
   font-size: 22px;
   transition: 0.3s;
 }
@@ -1349,6 +1459,8 @@ img {
   .sidebar {
     margin-top: 45px;
   }
+
+
 }
 
 .sidebar .sidebar-widget {
@@ -1514,6 +1626,31 @@ img {
   position: relative;
   margin-top: 45px;
   background: #006622;
+
+}
+
+.social-icon {
+  color: #fff;
+  margin-left: 10px;
+}
+
+a.social-icon:hover {
+  color: #fff;
+}
+
+.footer .icons {
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer .team {
+  text-align: right;
 }
 
 .footer .container-fluid {
