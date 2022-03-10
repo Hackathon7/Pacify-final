@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   color: #797979;
   background: #ffffff;
@@ -16,6 +19,14 @@ h6 {
 a {
   color: #454545;
   transition: 0.3s;
+}
+
+a .nav-item .nav-link{
+  margin-right: 2%;
+}
+
+#navbarCollapse {
+  margin-right: 0% !important;
 }
 
 a:hover,
@@ -169,15 +180,17 @@ a:focus {
   /* Do not repeat the image */
   background-size: cover;
   /* Resize the background image to cover the entire container */
-}
+
 
 .top-div-2 p {
+
   font-size: 2.5rem;
   font-weight: 900;
   color: rgb(51, 48, 48);
   text-align: center;
   margin-top: 40px;
   text-decoration: underline;
+
 }
 
 /**********************************/
@@ -296,6 +309,7 @@ a:focus {
   padding: 90px 0;
   background: #e6ffee;
   overflow: hidden;
+
 }
 
 .hero .container-fluid {
@@ -434,6 +448,43 @@ div.hero-btn {
   color: #343148;
   font-size: 60px;
   font-weight: 700;
+}
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
 }
 
 .page-header a {
@@ -678,6 +729,7 @@ div.hero-btn {
 
 .service-item:hover {
   transform: translateY(-50px);
+  
 }
 
 .text-align-feature:hover {
@@ -1403,6 +1455,7 @@ img {
   .sidebar {
     margin-top: 45px;
   }
+
 }
 
 .sidebar .sidebar-widget {
