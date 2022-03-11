@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   color: #797979;
   background: #ffffff;
@@ -164,7 +167,6 @@ a:focus {
 /* top-div-2 */
 
 .top-div-2 {
-
   margin-top: 100px;
   background-color: #b3e283;
   /* Used if the image is unavailable */
@@ -179,7 +181,6 @@ a:focus {
   background-size: cover;
   /* Resize the background image to cover the entire container */
 
-}
 
 .top-div-2 p {
 
@@ -448,6 +449,43 @@ div.hero-btn {
   font-size: 60px;
   font-weight: 700;
 }
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
 
 .page-header a {
   position: relative;
@@ -549,8 +587,6 @@ div.hero-btn {
   margin-bottom: 30px;
   margin-left: 0;
 }
-
-
 
 .about .about-img img {
   position: relative;
@@ -693,7 +729,7 @@ div.hero-btn {
 
 .service-item:hover {
   transform: translateY(-50px);
-
+  
 }
 
 .text-align-feature:hover {
@@ -1420,7 +1456,6 @@ img {
     margin-top: 45px;
   }
 
-
 }
 
 .sidebar .sidebar-widget {
@@ -1586,7 +1621,6 @@ img {
   position: relative;
   margin-top: 45px;
   background: #006622;
-
 }
 
 .social-icon {
@@ -1601,7 +1635,6 @@ a.social-icon:hover {
 .footer .icons {
   text-align: center;
   font-size: 1.5rem;
-
 }
 
 .footer .copyright {
