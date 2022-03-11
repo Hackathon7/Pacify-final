@@ -167,7 +167,6 @@ a:focus {
 /* top-div-2 */
 
 .top-div-2 {
-
   margin-top: 100px;
   background-color: #b3e283;
   /* Used if the image is unavailable */
@@ -182,7 +181,6 @@ a:focus {
   background-size: cover;
   /* Resize the background image to cover the entire container */
 
-}
 
 .top-div-2 p {
 
@@ -590,8 +588,6 @@ div.hero-btn {
   margin-left: 0;
 }
 
-
-
 .about .about-img img {
   position: relative;
   border-radius: 100%;
@@ -733,7 +729,7 @@ div.hero-btn {
 
 .service-item:hover {
   transform: translateY(-50px);
-
+  
 }
 
 .text-align-feature:hover {
@@ -1460,7 +1456,6 @@ img {
     margin-top: 45px;
   }
 
-
 }
 
 .sidebar .sidebar-widget {
@@ -1626,7 +1621,6 @@ img {
   position: relative;
   margin-top: 45px;
   background: #006622;
-
 }
 
 .social-icon {
@@ -1641,7 +1635,6 @@ a.social-icon:hover {
 .footer .icons {
   text-align: center;
   font-size: 1.5rem;
-
 }
 
 .footer .copyright {
