@@ -170,7 +170,7 @@ a:focus {
   
   background-color: #b3e283;
   /* Used if the image is unavailable */
-  background-image: url("Pacify-background.jpg");
+  background-image: url("images file/Pacify-background.jpg");
   /* The image used */
   height: 500px;
   /* You must set a specified height */
@@ -181,8 +181,14 @@ a:focus {
   background-size: cover;
   /* Resize the background image to cover the entire container */
 
+
 }
 .top-div-2 > p {
+=======
+}
+
+.top-div-2 p {
+
 
   font-size: 2.5rem;
   font-weight: 900;
