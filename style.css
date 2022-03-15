@@ -45,7 +45,31 @@ a:focus {
 .container-fluid {
   max-width: 1366px;
 }
+#back {
+	z-index: 3;
+	position: sticky;
+	bottom: 12px;
+}
 
+#back button{
+	outline: none;
+	border: none;
+	position: relative;
+	border-radius: 50px;
+	left: 95%;
+	width: 50px;
+	height: 50px;
+	background-color:#006622;
+	transition: all 0.3s ease-in-out;
+}
+
+#back button:hover{
+	background-color:#212529;
+}
+#back i{
+	color: white;
+	font-size: 1.2rem;
+}
 .back-to-top {
   position: fixed;
   display: none;
