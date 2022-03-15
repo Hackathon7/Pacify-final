@@ -15,7 +15,16 @@ h5,
 h6 {
   color: #343148;
 }
-
+#logo img{
+  width: 60px;
+  margin: 0px 10px;
+  height: 60px;
+  border-radius: 50px;
+}
+#logo img:hover{
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
 a {
   color: #454545;
   transition: 0.3s;
