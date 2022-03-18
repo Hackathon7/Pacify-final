@@ -164,45 +164,6 @@ a:focus {
   }
 }
 
-/* top-div-2 */
-
-.top-div-2 {
-  
-  background-color: #b3e283;
-  /* Used if the image is unavailable */
-  background-image: url("images file/Pacify-background.jpg");
-  /* The image used */
-  height: 500px;
-  /* You must set a specified height */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
-
-
-}
-.top-div-2 > p {
-=======
-}
-
-.top-div-2 p {
-
-
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: rgb(51, 48, 48);
-  text-align: center;
-  margin-top: 40px;
-  text-decoration: underline;
-
-}
-
-/**********************************/
-/*********** Nav Bar CSS **********/
-/**********************************/
-
 .navbar {
   position: relative;
   transition: 0.5s;
@@ -324,12 +285,11 @@ a:focus {
 
 .hero .hero-image {
   position: relative;
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 490px;
   text-align: right;
   margin-right: 35px;
-  padding-top: 130px;
-  padding-right: 30px;
+  padding-top: 2rem;
 }
 
 .hero .hero-image img {
@@ -345,7 +305,7 @@ a:focus {
 }
 
 .hero .hero-text h1 {
-  text-align: left;
+  text-align: center;
   color: #343148;
   font-size: 60px;
   font-weight: 700;
@@ -353,14 +313,14 @@ a:focus {
 }
 
 .hero .hero-text p {
-  text-align: left;
+  text-align: center;
   color: #343148;
   font-size: 25px;
   margin-bottom: 25px;
 }
 
-div.hero-btn {
-  text-align: left;
+.hero .hero-btn .btn {
+  text-align: center;
   font-weight: 600;
   /* padding: 12px 20px;
     font-size: 18px;
@@ -586,7 +546,7 @@ div.hero-btn {
 .about {
   position: relative;
   width: 100%;
-  padding: 80px 0;
+  padding: 45px 0;
 }
 
 .about .section-header {
@@ -594,18 +554,17 @@ div.hero-btn {
   margin-left: 0;
 }
 
+
 .about .about-img img {
   position: relative;
   border-radius: 100%;
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-right: 50px;
 }
 
 .about .about-text p {
   font-size: 16px;
-  text-align: left;
 }
 
 .about .about-text a.btn {
@@ -641,7 +600,6 @@ div.hero-btn {
   position: relative;
   width: 100%;
   padding: 45px 0 15px 0;
-  background: #e6ffee;
 }
 
 .service .service-item {
@@ -654,9 +612,6 @@ div.hero-btn {
   transition: 0.3s;
 }
 
-.service .third {
-  padding-bottom: 53.5px;
-}
 
 .service .service-item:hover,
 .service .service-item.active {
@@ -907,7 +862,6 @@ div.hero-btn {
   position: relative;
   width: 100%;
   padding: 45px 0;
-  background: #e6ffee;
 }
 
 .blog .blog-carousel {
@@ -1014,7 +968,7 @@ div.hero-btn {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background: #505050;
+  background: #006622;
   font-size: 22px;
   transition: 0.3s;
 }
@@ -1627,30 +1581,6 @@ img {
   position: relative;
   margin-top: 45px;
   background: #006622;
-}
-
-.social-icon {
-  color: #fff;
-  margin-left: 10px;
-}
-
-a.social-icon:hover {
-  color: #fff;
-}
-
-.footer .icons {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.footer .copyright {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.footer .team {
-  text-align: right;
-}
 
 .footer .container-fluid {
   padding: 90px 0 0 0;
