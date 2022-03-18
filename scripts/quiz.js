@@ -1,7 +1,6 @@
 
 window.onload = function () {
   show(0);
-
 }
 
 let questions = [
@@ -79,8 +78,6 @@ let questions = [
 var i;
 let points = 0;
 function show(i) {
-
-
   document.getElementById("questions").innerHTML = `
   <h2 class="pl-5">Q${i + 1}.${questions[i].question}</h2>
   <ul>
@@ -89,6 +86,7 @@ function show(i) {
     <li class="option">${questions[i].options[2]}</li>
     <li class="option">${questions[i].options[3]}</li>
     </ul>`;
+
   toggleActive();
 }
 let count = 1;
@@ -128,10 +126,15 @@ function nextQues() {
 }
 function toggleActive() {
   let option = document.querySelectorAll("li.option");
-
   for (let j = 0; j < option.length; j++) {
     option[j].onclick = function () {
       for (let k = 0; k < option.length; k++) {
+        
+        option[k].style.pointerEvents = "none";//when user clicks on any of the option rest of all are disabled so that he/she cannot choose any other option
+        option[k].style.backgroundColor="#ccc"//these are added to the view so that user can see that what is happen when he choose any option
+        option[k].style.color="#000";//these are added to the view so that user can see that what is happen when he choose any option
+        
+        // console.log(`Option you have selected : ${option[j].innerText}`);
         if (option[k].classList.contains("active")) {
           option[k].classList.remove("active");
         }
