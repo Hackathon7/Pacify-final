@@ -200,7 +200,7 @@ a:focus {
 /* top-div-2 */
 
 .top-div-2 {
-  
+
   background-color: #b3e283;
   /* Used if the image is unavailable */
   background-image: url("images file/Pacify-background.jpg");
@@ -768,7 +768,7 @@ div.hero-btn {
 
 .service-item:hover {
   transform: translateY(-50px);
-  
+
 }
 
 .text-align-feature:hover {
@@ -1770,6 +1770,19 @@ a.social-icon:hover {
   margin-top: 60px;
   padding: 0 30px;
 }
+.footer .copyright .copyright col-sm-12{
+  background: #b6d7a8;
+  color: #FFFFFF;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 20px;
+}
 
 .footer .copyright .row {
   padding-top: 25px;
@@ -1778,6 +1791,10 @@ a.social-icon:hover {
 }
 
 .footer .copyright p {
+  margin: 0;
+  color: #ffffff;
+}
+.footer .copyright p ul a li {
   margin: 0;
   color: #ffffff;
 }
