@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   /* font-family: "Lato"; */
   font-family: 'Poppins', sans-serif;
@@ -42,7 +44,10 @@ body {
   padding-bottom: 5px;
   border-radius: 20px;
 }
-
+//when user
+.questions .option.disabled{
+  pointer-events: none;
+}
 #btn {
   background-color: white;
   color: #006622;
