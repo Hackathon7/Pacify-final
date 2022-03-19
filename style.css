@@ -216,9 +216,9 @@ a:focus {
 
 
 }
-.top-div-2 > p {
+/* .top-div-2 > p {
 =======
-}
+} */
 
 .top-div-2 p {
 
@@ -1615,7 +1615,7 @@ img {
 
 .sidebar .category-widget ul li span {
   display: inline-block;
-  float: right;
+  /* float: right; */
 }
 
 .sidebar .sidebar-widget .tag-widget {
