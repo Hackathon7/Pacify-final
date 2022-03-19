@@ -12,7 +12,16 @@
     padding: 250px 100px 30px 220px;
     overflow: hidden;
   }
-  
+  #logo img{
+    width: 60px;
+    margin: 0px 10px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  #logo img:hover{
+    transition: all 0.5s ease-in-out;
+    transform: rotate(360deg);
+  }
   body{
     width: 100%;
     height: 100vh;
