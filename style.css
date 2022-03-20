@@ -15,12 +15,15 @@ h5,
 h6 {
   color: #343148;
 }
+#logo img:hover{
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
 
 a {
   color: #454545;
   transition: 0.3s;
 }
-
 a .nav-item .nav-link{
   margin-right: 2%;
 }
