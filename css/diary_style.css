@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   background: #006622;
   color: white;
@@ -22,6 +22,7 @@ body {
 
 h1 {
   font-size: 3rem;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -30,6 +31,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  margin:0;
 }
 
 p {
@@ -48,7 +50,7 @@ button {
   border: none;
   background-color: aquamarine;
   color: #0a2472;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -59,7 +61,7 @@ header {
 .section {
   padding: 1em 1em;
   width: 100%;
-  margin: 1em auto;
+  margin: 0 auto;
 }
 
 .container {
@@ -116,25 +118,25 @@ input[class^='btn-']:hover {
   border-radius: 2px;
   border: unset;
   background-color: #E6FFEE;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .entry-text-title:focus {
   outline-color: black;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   color: black;
   font-size: 1rem;
 }
 
 .entry-text-title::placeholder {
   color: black;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
 
 .entry-text-title::-ms-value {
   color: black;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
 
@@ -151,7 +153,7 @@ input[class^='btn-']:hover {
 .journal-label {
   display: block;
   line-height: 1.6;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
@@ -162,8 +164,8 @@ input[class^='btn-']:hover {
   padding: 1em;
   border-radius: 2px;
   border: unset;
-  background-color:;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #E6FFEE;
 }
 
 @media (min-width: 769px) {
@@ -175,20 +177,20 @@ input[class^='btn-']:hover {
     border-radius: 2px;
     border: unset;
     background-color: #E6FFEE;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
 .entry-text-box:focus {
   outline-color: black;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   color: black;
   font-size: 1rem;
 }
 
 .entry-text-box::placeholder {
   color: black;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
 
@@ -212,14 +214,14 @@ input[class^='btn-']:hover {
 
 .single-entry-div {
   max-width: 100%;
-
-  margin: 1em auto;
-  padding: 1em 1em;
+  margin-top: 0;
+  padding: 0 1em;
 }
 
 .single-entry-date {
   background-color: #006622;
   width: 100%;
+  margin-top: 0;
 }
 
 .heading-results {
