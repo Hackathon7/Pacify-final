@@ -6,6 +6,11 @@ body {
   background: #ffffff;
   font-family: "Open Sans", sans-serif;
 }
+#logoimg{
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
+}
 
 h1,
 h2,
