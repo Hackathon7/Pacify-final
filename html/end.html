@@ -9,22 +9,25 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="stylequiz.css">
+   <!-- <link rel="stylesheet" href="stylequiz.css"> -->
+   <link rel="stylesheet" href="/css/styleEnd.css">
 
   </head>
   <body>
     <div class="main">
       <div class="quiz">
        <div class="header">
-       
-       
+        
        </div>
        <div class="quiz-body">
-        <div class="tt">
-        <p ><h1>Your Score: <span class="pointspan"></span></h1></p>
-        </div>
+        
         <div class="quiz-body-2">
-          <p><h3 class="desspan"></h3></p>
+          <div class="tt">
+            <p class="score">Your Score: <span class="pointspan"></span></p>
+            </div>
+          <img src="/images file/yoga.png" alt="yoga-logo" class="yoga-logo">
+          <p><h5 class="desspan"></h5></p><br>
+          <button id="returnHome"><i class="fa fa-home"></i>  Home</button>
         </div>
         
         
@@ -34,6 +37,8 @@
 <script>
      var score;
      var des;
+     const returnHome = document.getElementById('returnHome');
+
    let pointsres = sessionStorage.getItem("respoints");
    if ( pointsres>=0 && pointsres<=3) {
     score ="No Depression";
@@ -55,6 +60,11 @@ if ( pointsres>=14 && pointsres<=18) {
 
    document.querySelector(".pointspan").innerHTML=score;
    document.querySelector(".desspan").innerHTML=des;
+
+  function backHome(){
+    window.location.href = "index.html";
+  }
+   returnHome.addEventListener('click',backHome);
    
 </script>
 </body>
