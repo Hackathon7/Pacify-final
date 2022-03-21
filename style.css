@@ -15,7 +15,16 @@ h5,
 h6 {
   color: #343148;
 }
-
+#logo img{
+  width: 60px;
+  margin: 0px 10px;
+  height: 60px;
+  border-radius: 50px;
+}
+#logo img:hover{
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
 a {
   color: #454545;
   transition: 0.3s;
@@ -45,7 +54,31 @@ a:focus {
 .container-fluid {
   max-width: 1366px;
 }
+#back {
+	z-index: 3;
+	position: sticky;
+	bottom: 12px;
+}
 
+#back button{
+	outline: none;
+	border: none;
+	position: relative;
+	border-radius: 50px;
+	left: 95%;
+	width: 50px;
+	height: 50px;
+	background-color:#006622;
+	transition: all 0.3s ease-in-out;
+}
+
+#back button:hover{
+	background-color:#212529;
+}
+#back i{
+	color: white;
+	font-size: 1.2rem;
+}
 .back-to-top {
   position: fixed;
   display: none;
@@ -57,7 +90,7 @@ a:focus {
   font-size: 22px;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  /* transition: background 0.5s; */
   z-index: 9;
 }
 
@@ -167,10 +200,10 @@ a:focus {
 /* top-div-2 */
 
 .top-div-2 {
-  margin-top: 100px;
+
   background-color: #b3e283;
   /* Used if the image is unavailable */
-  background-image: url("Pacify-background.jpg");
+  background-image: url("images file/Pacify-background.jpg");
   /* The image used */
   height: 500px;
   /* You must set a specified height */
@@ -182,7 +215,13 @@ a:focus {
   /* Resize the background image to cover the entire container */
 
 
+}
+/* .top-div-2 > p {
+=======
+} */
+
 .top-div-2 p {
+
 
   font-size: 2.5rem;
   font-weight: 900;
@@ -729,7 +768,7 @@ div.hero-btn {
 
 .service-item:hover {
   transform: translateY(-50px);
-  
+
 }
 
 .text-align-feature:hover {
@@ -1576,7 +1615,7 @@ img {
 
 .sidebar .category-widget ul li span {
   display: inline-block;
-  float: right;
+  /* float: right; */
 }
 
 .sidebar .sidebar-widget .tag-widget {
@@ -1731,6 +1770,19 @@ a.social-icon:hover {
   margin-top: 60px;
   padding: 0 30px;
 }
+.footer .copyright .copyright col-sm-12{
+  background: #b6d7a8;
+  color: #FFFFFF;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 20px;
+}
 
 .footer .copyright .row {
   padding-top: 25px;
@@ -1739,6 +1791,10 @@ a.social-icon:hover {
 }
 
 .footer .copyright p {
+  margin: 0;
+  color: #ffffff;
+}
+.footer .copyright p ul a li {
   margin: 0;
   color: #ffffff;
 }

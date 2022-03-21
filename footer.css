@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@100&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  color: #797979;
+  background: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+.footer{
+  background: #006622;
+  color: #FFFFFF;
+  height: 350px;
+  position: relative;
+}
+.footer .footer-content{
+  display:flex;
+}
+.footer .footer-content .footer-section{
+  flex: 1;
+  padding: 25px;
+}
+.footer .footer-content h1,
+.footer .footer-content h2{
+  color: white;
+}
+.footer .footer-content .about h1 span{
+  color: red;
+}
+.footer .footer-content .Contact-us h4 span{
+  display: block;
+  margin-bottom: 8px;
+}
+.footer .footer-content .about p{
+  font-size: 1.5em;
+}
+.footer .footer-content .Contact-us h3{
+  font-size: 1.5em;
+
+}
+.footer .footer-content .Contact-us h3{
+  font-size: 1.5em;
+
+}.footer .footer-content .Contact-us h3 span{
+  font-size: 1.5em;
+
+}.footer .footer-content .links ul a{
+  display: block;
+  margin-bottom: 8px;
+  transition: all .3s;
+  color: #FEFFFF;
+}  .footer .footer-content .links ul a li{
+    font-size: 1em;
+
+}
+.footer .footer-content .links ul a:hover{
+  color: white;
+  margin-left: 15px;
+  transition: all .3s;
+}
+
+.footer .footer-bottom{
+  background: #93c47d;
+  color: #686868;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  width: 100%;
+  color: #FEFFFF;
+  font-size: 17px;
+}
+.social-icon {
+  color: #fff;
+  margin-left: 12px;
+}
+
+a.social-icon:hover {
+  color: #fff;
+}
+.fa-linkedin:hover {
+    color: #B4F5ED ;
+
+}
+.fa-facebook-square:hover {
+    color: #B4F5ED ;
+
+}
+.fa-instagram:hover {
+    color: #B4F5ED ;
+
+}
+.fa-envelope:hover {
+    color: #B4F5ED ;
+}
+
+.footer .icons {
+  text-align: center;
+  font-size: 2.3rem;
+}
