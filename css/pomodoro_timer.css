@@ -4,7 +4,7 @@ html{
 body {
     color: #797979;
     background: #ffffff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: #ffebee;
     padding: 0;
     margin: 0;
@@ -13,7 +13,7 @@ h1,
 h2,
 h3 {
     color: #343148;
-    font-family: 'Lato';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     line-height: 1.1;
     letter-spacing: 0.025em;
@@ -66,6 +66,7 @@ a:hover {
     font-size: 4em;
 }
 .button {
+    font-family: 'Montserrat', sans-serif;
     width: 100px;
     height: 45px;
     border: solid thin #343148;
@@ -73,6 +74,8 @@ a:hover {
     background: #343148;
     color: #ffebee;
     font-weight: bold;
+    transition: 0.3s;
+    border-radius: 6px;
 }
 .button:hover {
     background: white;
