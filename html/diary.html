@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Main Style Sheet -->
-    <link rel="stylesheet" href="diary_style.css" />
+    <link rel="stylesheet" href="/css/diary_style.css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -13,10 +13,9 @@
       crossorigin="anonymous"
     />
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>My Diary App</title>
   </head>
   <body>
@@ -52,11 +51,12 @@
 
     <!-- Journal Entry Results -->
     <section class="section sectionEntryResults" id="entryResultsSection">
+      <h2 class="heading-results">Journal Entries</h2>
       <div class="container">
         <div class="container-row entryResultRow"></div>
       </div>
     </section>
 
-    <script src="mental_diary.js"></script>
+    <script src="/scripts/mental_diary.js"></script>
   </body>
 </html>

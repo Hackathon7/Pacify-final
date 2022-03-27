@@ -26,10 +26,6 @@ function addEntryToDom(event) {
         const year = d.getFullYear();
 
 
-        const heading = document.createElement(`h2`);
-        heading.className = `heading-results`;
-        heading.textContent = `Journal Entries`;
-        entryResultRow.insertAdjacentElement(`beforebegin`, heading)
 
         // Adding Div
         const entryDiv = document.createElement(`div`);
