@@ -6,7 +6,9 @@ body {
   background: #ffffff;
   font-family: "Open Sans", sans-serif;
 }
-
+.backg{
+  background: #e6ffee;
+}
 h1,
 h2,
 h3,
@@ -485,9 +487,18 @@ div.hero-btn {
 .page-header h2 {
   position: relative;
   color: #343148;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
 }
+.page-header .about-img img {
+  position: relative;
+  border-radius: 100%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
 .title-word {
   animation: color-animation 4s linear infinite;
 }
