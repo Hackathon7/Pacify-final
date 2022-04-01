@@ -23,7 +23,7 @@
 
 
   <!-- Template Stylesheet -->
-  <link href="SignUp.css" rel="stylesheet">
+  <link href="Login.css" rel="stylesheet">
   <link href="flaticon.css" rel="stylesheet">
 
 </head>
@@ -56,8 +56,8 @@
    <!-- Navbar ends -->
 <div class="hero">
   <div class="cont">
-    <div class="form sign-up">
-      <h2>Sign Up</h2>
+    <div class="form sign-in">
+      <h2>Sign In</h2>
       <label>
         <span>Email Address</span>
         <input type="email" name="email">
@@ -66,18 +66,14 @@
         <span>Password</span>
         <input type="password" name="password">
       </label>
-      <label>
-        <span>Confirm Password</span>
-        <input type="confirmpassword" name="confirmpassword">
-      </label>
-      <button class="submit" type="button">Sign Up</button>
+      <button class="submit" type="button">Sign In</button>
       <p class="forgot-pass">Forgot Password ?</p>
 
       <div class="social-media">
         <ul>
           <li><a target="_blank" href="https://github.com/Hackathon7/Pacify-final"><img src="images file\github.png"></a></li>
         </ul>
-      </div> 
+      </div>
     </div>
 
     <div class="sub-cont">
@@ -91,12 +87,16 @@
           <p>If you already have an account, just sign in. We've missed you!</p>
         </div>
         <div class="img-btn">
-          <span class="m-up">Sign In</span>
-          <span class="m-in">Sign Up</span>
+          <span class="m-up">Sign Up</span>
+          <span class="m-in">Sign In</span>
         </div>
       </div>
-      <div class="form sign-in">
-        <h2>Sign In</h2>
+      <div class="form sign-up">
+        <h2>Sign Up</h2>
+        <label>
+          <span>Name</span>
+          <input type="text">
+        </label>
         <label>
           <span>Email</span>
           <input type="email">
@@ -105,7 +105,11 @@
           <span>Password</span>
           <input type="password">
         </label>
-        <button type="button" class="submit">Sign In Now</button>
+        <label>
+          <span>Confirm Password</span>
+          <input type="password">
+        </label>
+        <button type="button" class="submit">Sign Up Now</button>
       </div>
     </div>
   </div>

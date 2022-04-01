@@ -251,15 +251,13 @@
   }
   
   
-  .sign-up
-  {
+  .sign-in{
     padding-top: 65px;
     -webkit-transition-timing-function:ease-out;
             transition-timing-function:ease-out;
   }
   
-  .cont.s-signup .sign-up
-  {
+  .cont.s-signup .sign-in{
     -webkit-transition-timing-function:ease-in-out;
             transition-timing-function:ease-in-out;
     -webkit-transition-duration:1.2s;
@@ -333,14 +331,12 @@
             transform:translateY(72px);
   }
   
-  .sign-in
-  {
+  .sign-up{
     -webkit-transform:translate3d(-900px, 0, 0);
             transform:translate3d(-900px, 0, 0);
   }
   
-  .cont.s-signup .sign-in
-  {
+  .cont.s-signup .sign-up{
     -webkit-transform:translate3d(0, 0, 0);
             transform:translate3d(0, 0, 0);
   }
