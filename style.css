@@ -1833,7 +1833,8 @@ a.social-icon:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
+  
 }
 
 ::-webkit-scrollbar-track {
@@ -1842,8 +1843,9 @@ a.social-icon:hover {
 
 ::-webkit-scrollbar-thumb {
   background: #034d09;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #034d09;
+  background: #02840d;
 }
