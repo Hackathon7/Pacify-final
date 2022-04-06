@@ -47,18 +47,20 @@ is not healthy for your mind to work for long periods of time without a break. U
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Project Images
-
 **_Home Page_:**
-![](Screenshot1.png)
+![Home Page](https://github.com/Hackathon7/Pacify-final/blob/master/images%20file/Home.png)
 
 **_Features_:**
-![](Screenshot2.png)
+![Features Page](https://github.com/Hackathon7/Pacify-final/blob/master/images%20file/Features.png)
 
 **_Articles_:**
-![](Screenshot3.png)
+![Articles](https://github.com/Hackathon7/Pacify-final/blob/master/images%20file/Articles.png)
 
 **_Quiz_:**
-![](Screenshot4.png)
+![Quiz-Quest](https://github.com/Hackathon7/Pacify-final/blob/master/images%20file/Quiz-Quest.png)
+
+**_Quiz Result_:**
+![Quiz-Sample-Result](https://github.com/Hackathon7/Pacify-final/blob/master/images%20file/Quiz-Result.png)
 
 ## Project Maintainers
 
