@@ -244,7 +244,7 @@ a:focus {
 
 .navbar.nav-sticky {
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -255,7 +255,7 @@ a:focus {
   font-size: 45px;
   line-height: 0px;
   font-weight: 700;
-  text-transform: uppercase;
+ 
   letter-spacing: 2px;
   transition: 0.5s;
 }
@@ -279,14 +279,23 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  padding: 10px 10px 8px 10px;
+text-transform: none;
+font-family: serif;
+    font-size: 20px;
+    font-weight: 500;
+  padding:0px 18px;
+  margin: 0px 8px;
   color: #ffffff;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  background: #b3e283;
-  transition: none;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+  color: #006622;
+  border-radius:  30px 0px 30px 0px;
+  transform: scale(1.17);
+
 }
 
 .navbar .dropdown-menu {
@@ -300,8 +309,8 @@ a:focus {
   .navbar {
     position: absolute;
     width: 100%;
-    top: 35px;
-    padding: 20px 60px;
+    top: 0px;
+    padding: 10px 30px;
     background: #006622 !important;
     z-index: 9;
   }
