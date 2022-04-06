@@ -49,7 +49,7 @@ is not healthy for your mind to work for long periods of time without a break. U
 ## Project Images
 
 **_Home Page_:**
-![Home Page](Home.png)
+![Home Page](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Home.png)
 
 **_Features_:**
 ![Features Page](Features.png)
@@ -59,7 +59,7 @@ is not healthy for your mind to work for long periods of time without a break. U
 
 **_Quiz_:**
 ![Quiz-Quest](Quiz1.png)
-![Quiz-Result](Quiz2.png)
+
 
 ## Project Maintainers
 
