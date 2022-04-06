@@ -71,30 +71,26 @@
     
     
     // Blogs carousel
-    $(".blog-carousel").owlCarousel({
-        autoplay: true,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
-        responsive: {
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        dots:false,
+        nav:true,
+        autoplay:true,   
+        smartSpeed: 3000, 
+        autoplayTimeout:7000,
+        responsive:{
             0:{
                 items:1
             },
-            576:{
-                items:1
-            },
-            768:{
+            600:{
                 items:2
             },
-            992:{
+            1000:{
                 items:3
             }
         }
-    });
+    })
     
     
     // Class filter

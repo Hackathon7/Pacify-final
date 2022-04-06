@@ -901,7 +901,6 @@ div.hero-btn {
   position: relative;
   width: 100%;
   padding: 45px 0;
-  background: #e6ffee;
 }
 
 .blog .blog-carousel {
@@ -912,7 +911,7 @@ div.hero-btn {
 }
 
 .blog .blog-item {
-  position: relative;
+   position: relative; 
   margin: 0 15px;
   background-color: #fff;
 }
@@ -928,14 +927,15 @@ div.hero-btn {
 
 .blog .blog-img img {
   width: 100%;
+
 }
 
 .blog .blog-text {
   position: relative;
   padding: 25px 30px;
-  border-right: 1px solid rgba(0, 0, 0, 0.07);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  border-left: 1px solid rgba(0, 0, 0, 0.07);
+  border-right: 1px solid rgba(0, 0, 0, .07);
+  border-bottom: 1px solid rgba(0, 0, 0, .07);
+  border-left: 1px solid rgba(0, 0, 0, .07);
 }
 
 .blog .blog-text h2 {
@@ -953,17 +953,7 @@ div.hero-btn {
   font-weight: 700;
   text-transform: uppercase;
   color: #343148;
-  transition: 0.3s;
-}
-
-.blog-item {
-  padding: 5px;
-}
-
-.blog-item:hover {
-  background-color: hsl(135, 59%, 56%);
-  color: #ffffff;
-  border-radius: 2%;
+  transition: .3s;
 }
 
 .blog .blog-item a.btn i {
@@ -1008,9 +998,9 @@ div.hero-btn {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background: #505050;
+  background: #006622;
   font-size: 22px;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .blog .owl-nav .owl-prev:hover,
@@ -1027,7 +1017,7 @@ div.hero-btn {
 
 .blog .pagination .page-link:hover,
 .blog .pagination .page-item.active .page-link {
-  color: #f7cac9;
+  color: #F7CAC9;
   background: #343148;
 }
 
@@ -1576,7 +1566,6 @@ img {
 
 .sidebar .category-widget ul li span {
   display: inline-block;
-  float: right;
 }
 
 .sidebar .sidebar-widget .tag-widget {
