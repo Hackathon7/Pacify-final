@@ -52,14 +52,16 @@ is not healthy for your mind to work for long periods of time without a break. U
 ![Home Page](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Home.png)
 
 **_Features_:**
-![Features Page](Features.png)
+![Features Page](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Features.png)
 
 **_Articles_:**
-![Articles](Article.png)
+![Articles](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Article.png)
 
 **_Quiz_:**
-![Quiz-Quest](Quiz1.png)
+![Quiz-Quest](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Quiz1.png)
 
+**_Quiz Result_:**
+![Quiz-Quest](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Quiz2.png)
 
 ## Project Maintainers
 
