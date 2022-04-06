@@ -47,7 +47,7 @@ is not healthy for your mind to work for long periods of time without a break. U
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Project Images
-
+**_Home Page_:**
 ![Home Page](https://github.com/Hackathon7/Pacify-final/blob/master/images%20file/Home.png)
 
 **_Features_:**
