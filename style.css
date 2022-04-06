@@ -47,33 +47,7 @@ a:focus {
   max-width: 1366px;
 }
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #f7cac9;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 22px;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 9;
-}
 
-.back-to-top:hover {
-  background: #343148;
-}
-
-.back-to-top:hover i {
-  color: #f7cac9;
-}
-
-.back-to-top i {
-  color: #343148;
-  padding-top: 10px;
-}
 
 /**********************************/
 /********** Top Bar CSS ***********/
@@ -165,34 +139,7 @@ a:focus {
   }
 }
 
-/* top-div-2 */
 
-.top-div-2 {
-  margin-top: 100px;
-  background-color: #b3e283;
-  /* Used if the image is unavailable */
-  background-image: url("images file/Pacify-background.jpg");
-  /* The image used */
-  height: 500px;
-  /* You must set a specified height */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
-}
-
-.top-div-2 p {
-
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: rgb(51, 48, 48);
-  text-align: center;
-  margin-top: 40px;
-  text-decoration: underline;
-
-}
 
 /**********************************/
 /*********** Nav Bar CSS **********/
@@ -1842,7 +1789,7 @@ a:focus {
 	border: none;
 	position: relative;
 	border-radius: 50px;
-	left: 95%;
+	left: 32px;
 	width: 50px;
 	height: 50px;
 	background-color:#006622;
@@ -1855,33 +1802,6 @@ a:focus {
 #back i{
 	color: white;
 	font-size: 1.2rem;
-}
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #f7cac9;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 22px;
-  right: 15px;
-  bottom: 15px;
-  /* transition: background 0.5s; */
-  z-index: 9;
-}
-
-.back-to-top:hover {
-  background: #343148;
-}
-
-.back-to-top:hover i {
-  color: #f7cac9;
-}
-
-.back-to-top i {
-  color: #343148;
-  padding-top: 10px;
 }
 
 /**********************************/
