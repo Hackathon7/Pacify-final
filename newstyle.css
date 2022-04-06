@@ -1,0 +1,115 @@
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .svgMain {
+    text-align: center;
+  }
+  
+  svg{
+    font-weight:bold;
+    max-width:600px;
+    height:auto;
+  }
+  
+  @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+  body {
+    background: #3E5151;
+    background: #e6ffee;
+    font-family: 'Cabin Condensed', sans-serif;
+    
+  }
+  /* heading */
+  
+  .styles {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 4vmin;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  
+  .stylebox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #000000d0;
+    color: white;
+    border-radius: 30px;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 1.5rem;
+    border: none;
+    width: 20rem;
+    justify-content: center;
+    transition: 0.2s;
+  }
+  .stylebox:hover {
+    transform: scale(1.02);
+  }
+  .stylebox .image {
+    width: 20rem;
+    height: 13rem;
+  }
+  .stylebox .image img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    image-rendering: pixelated;
+  }
+  .stylebox p {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .stylebox .btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .stylebox a {
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1vmin;
+    font-size: 1.2rem;
+    background-color: rgb(106, 114, 112);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.2s;
+    width: 100%;
+  }
+  
+  a:hover {
+    background-color: rgb(148, 168, 163);
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+      .styles {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 4vmin;
+      }
+      .stylebox {
+        padding: 0.5rem;
+        margin: auto;
+        width: 18rem;
+        margin-bottom: 1.5rem;
+      }
+      .stylebox .image {
+        width: 18rem;
+        height: 12rem;
+        border-radius: 0.5rem;
+      }
+    }
+    
