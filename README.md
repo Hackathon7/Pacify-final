@@ -49,19 +49,19 @@ is not healthy for your mind to work for long periods of time without a break. U
 ## Project Images
 
 **_Home Page_:**
-![Home Page](../images file/Home.png)
+![Home Page](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Home.png)
 
 **_Features_:**
-![Features Page](../images file/Features.png)
+![Features Page](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Features.png)
 
 **_Articles_:**
-![Articles](../images file/Article.png)
+![Articles](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Article.png)
 
 **_Quiz_:**
-![Quiz-Quest](../images file/Quiz1.png)
+![Quiz-Quest](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Quiz1.png)
 
 **_Quiz Result_:**
-![Quiz-Quest](../images file/Quiz2.png)
+![Quiz-Quest](https://github.com/Ranjana550/Pacify-final/blob/project-images/images%20file/Quiz2.png)
 
 ## Project Maintainers
 
