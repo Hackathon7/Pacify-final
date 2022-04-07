@@ -3556,3 +3556,23 @@ a.social-icon:hover {
   background: #02840d;
 }
 
+/* nav to top*/
+.fadein {
+  opacity:1;
+}
+.fadeout {
+  opacity:0;
+}
+#navtop
+{
+  background: #536503;
+  outline: none;
+  border: none;
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  height: 55px;
+  width: 55px;
+  border-radius: 30px;
+}
+
