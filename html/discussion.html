@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discussion Forum</title>
+    <link rel="stylesheet" href="/css/discussionForum.css" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Nav Bar Start -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="/images file/logo.png" />
+      </div>
+      <div class="community">Community</div>
+    </div>
+    <!-- nav bar end -->
+    <!-- side bar and discussion section -->
+    <article class="body-page">
+      <div class="sidebar"></div>
+      <div class="discussion">
+        <div class="margin-bottom">
+          <button class="button">Add new discussion</button>
+        </div>
+        <!-- button container start-->
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">
+            Show all
+          </button>
+          <button class="btn" onclick="filterSelection('recent')">
+            recent
+          </button>
+          <button class="btn" onclick="filterSelection('trending')">
+            Trending
+          </button>
+        </div>
+        <!-- button containers end -->
+        <div class="discussion-section">
+          <div class="filterDiv recent">
+            <div class="content">
+              <p class="question">ipsum, dolor sit amet consectetu ?</p>
+              <div class="time">09:10pm</div>
+              <input type="checkbox" class="read-more-state" id="post-1" />
+              <p class="read-more-wrap">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. ipsa
+                explicabo deleniti nostrum vitae molestias adipisci pariatur,
+                culpa totam ipsam natus veritatis voluptate cumque. Cupiditate,
+                placeat eaque!
+                <span class="read-more-target"
+                  >Libero fuga facilis vel consectetur quos sapiente deleniti
+                  eveniet dolores tempore eos deserunt officia quis ab?In
+                  voluptate eaque neque maiores voluptatum amet?</span
+                >
+              </p>
+              <label for="post-1" class="read-more-trigger"></label>
+            </div>
+          </div>
+          <div class="filterDiv recent trending">
+            <div class="content">
+              <p class="question">ipsum, dolor sit amet consectetu ?</p>
+              <div class="time">09:10pm</div>
+              <input type="checkbox" class="read-more-state" id="post-2" />
+              <p class="read-more-wrap">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. ipsa
+                explicabo deleniti nostrum vitae molestias adipisci pariatur,
+                culpa totam ipsam natus veritatis voluptate cumque. Cupiditate,
+                placeat eaque!
+                <span class="read-more-target"
+                  >Libero fuga facilis vel consectetur quos sapiente deleniti
+                  eveniet dolores tempore eos deserunt officia quis ab?In
+                  voluptate eaque neque maiores voluptatum amet?</span
+                >
+              </p>
+              <label for="post-2" class="read-more-trigger"></label>
+            </div>
+          </div>
+          <div class="filterDiv trending">
+            <div class="content">
+              <p class="question">ipsum, dolor sit amet consectetu ?</p>
+              <div class="time">09:10pm</div>
+              <input type="checkbox" class="read-more-state" id="post-3" />
+              <p class="read-more-wrap">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. ipsa
+                explicabo deleniti nostrum vitae molestias adipisci pariatur,
+                culpa totam ipsam natus veritatis voluptate cumque. Cupiditate,
+                placeat eaque!
+                <span class="read-more-target"
+                  >Libero fuga facilis vel consectetur quos sapiente deleniti
+                  eveniet dolores tempore eos deserunt officia quis ab?In
+                  voluptate eaque neque maiores voluptatum amet?</span
+                >
+              </p>
+              <label for="post-3" class="read-more-trigger"></label>
+            </div>
+          </div>
+          <div class="filterDiv recent">
+            <div class="content">
+              <p class="question">ipsum, dolor sit amet consectetu ?</p>
+              <div class="time">09:10pm</div>
+              <input type="checkbox" class="read-more-state" id="post-4" />
+              <p class="read-more-wrap">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. ipsa
+                explicabo deleniti nostrum vitae molestias adipisci pariatur,
+                culpa totam ipsam natus veritatis voluptate cumque. Cupiditate,
+                placeat eaque!
+                <span class="read-more-target"
+                  >Libero fuga facilis vel consectetur quos sapiente deleniti
+                  eveniet dolores tempore eos deserunt officia quis ab?In
+                  voluptate eaque neque maiores voluptatum amet?</span
+                >
+              </p>
+              <label for="post-4" class="read-more-trigger"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="suggestions">
+        <h2 class="post">Suggestions post</h2>
+      </div>
+    </article>
+    <!-- side bar and discussion section end -->
+    <!-- Footer Start -->
+    <footer>
+      <div
+        class="footer wow fadeIn"
+        data-wow-delay="0.3s"
+        style="animation-delay: 0.3s; animation-name: none"
+      >
+        <div class="container copyright">
+          <div class="row">
+            <div class="col-md-4">
+              <p>PaciFy - July 14, 2021 - Hack for Inclusion</p>
+            </div>
+            <div class="icons col-md-4">
+              <a class="social-icon" href=""
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a class="social-icon" href=""
+                ><i class="fa-brands fa-facebook-square"></i
+              ></a>
+              <a class="social-icon" href=""
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="social-icon" href=""
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <div class="team col-md-4">
+              <p>Team - Mind Bogglers</p>
+            </div>
+            <div class="copyright col-sm-12">
+              <p>©-PaciFy|All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+  </body>
+</html>
+<script>
+  filterSelection("all");
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>

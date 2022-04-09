@@ -1,4 +1,3 @@
-
 html{
   scroll-behavior: smooth;
 }
@@ -1739,13 +1738,13 @@ h5,
 h6 {
   color: #343148;
 }
-#logo img{
+#logo img {
   width: 60px;
   margin: 0px 10px;
   height: 60px;
   border-radius: 50px;
 }
-#logo img:hover{
+#logo img:hover {
   transition: all 0.5s ease-in-out;
   transform: rotate(360deg);
 }
@@ -1754,7 +1753,7 @@ a {
   transition: 0.3s;
 }
 
-a .nav-item .nav-link{
+a .nav-item .nav-link {
   margin-right: 2%;
 }
 
@@ -1779,11 +1778,21 @@ a:focus {
   max-width: 1366px;
 }
 #back {
-	z-index: 3;
-	position: sticky;
-	bottom: 12px;
+  z-index: 3;
+  position: sticky;
+  bottom: 12px;
 }
 
+#back button {
+  outline: none;
+  border: none;
+  position: relative;
+  border-radius: 50px;
+  left: 95%;
+  width: 50px;
+  height: 50px;
+  background-color: #006622;
+  transition: all 0.3s ease-in-out;
 #back button{
 	outline: none;
 	border: none;
@@ -1796,12 +1805,12 @@ a:focus {
 	transition: all 0.3s ease-in-out;
 }
 
-#back button:hover{
-	background-color:#212529;
+#back button:hover {
+  background-color: #212529;
 }
-#back i{
-	color: white;
-	font-size: 1.2rem;
+#back i {
+  color: white;
+  font-size: 1.2rem;
 }
 
 /**********************************/
@@ -1897,7 +1906,6 @@ a:focus {
 /* top-div-2 */
 
 .top-div-2 {
-
   background-color: #b3e283;
   /* Used if the image is unavailable */
   background-image: url("images file/Pacify-background.jpg");
@@ -1911,22 +1919,17 @@ a:focus {
   background-size: cover;
   /* Resize the background image to cover the entire container */
 }
-
-
 /* .top-div-2 > p {
 =======
 } */
 
 .top-div-2 p {
-
-
   font-size: 2.5rem;
   font-weight: 900;
   color: rgb(51, 48, 48);
   text-align: center;
   margin-top: 40px;
   text-decoration: underline;
-
 }
 
 /**********************************/
@@ -2054,7 +2057,6 @@ font-family: serif;
   padding: 90px 0;
   background: #e6ffee;
   overflow: hidden;
-
 }
 
 .hero .container-fluid {
@@ -2208,37 +2210,51 @@ div.hero-btn {
 }
 
 .title-word-1 {
-  --color-1: #DF8453;
-  --color-2: #3D8DAE;
-  --color-3: #E4A9A8;
+  --color-1: #df8453;
+  --color-2: #3d8dae;
+  --color-3: #e4a9a8;
 }
 
 .title-word-2 {
-  --color-1: #DBAD4A;
-  --color-2: #ACCFCB;
-  --color-3: #17494D;
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
 }
 
 .title-word-3 {
-  --color-1: #ACCFCB;
-  --color-2: #E4A9A8;
-  --color-3: #ACCFCB;
+  --color-1: #accfcb;
+  --color-2: #e4a9a8;
+  --color-3: #accfcb;
 }
 
 .title-word-4 {
-  --color-1: #3D8DAE;
-  --color-2: #DF8453;
-  --color-3: #E4A9A8;
+  --color-1: #3d8dae;
+  --color-2: #df8453;
+  --color-3: #e4a9a8;
 }
 
 @keyframes color-animation {
-  0%    {color: var(--color-1)}
-  32%   {color: var(--color-1)}
-  33%   {color: var(--color-2)}
-  65%   {color: var(--color-2)}
-  66%   {color: var(--color-3)}
-  99%   {color: var(--color-3)}
-  100%  {color: var(--color-1)}
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
 }
 
 .page-header a {
@@ -2327,7 +2343,39 @@ div.hero-btn {
     font-size: 30px;
   }
 }
+/********************************/
+/********Discussion CSS**********/
+/********************************/
+.discussion-page a.btn {
+  position: relative;
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: #006622;
+  border-radius: 5%;
+  transition: 0.3s;
+}
 
+.discussion-page a.btn:hover {
+  color: #343148;
+  background: #ffffff;
+  border: 1px solid #006622;
+}
+.forum {
+  position: relative;
+  padding: 45px 0 15px 0;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.margin-forum {
+  margin-top: 50px;
+}
+.forum-image {
+  width: 100%;
+}
 /*******************************/
 /********** About CSS **********/
 /*******************************/
@@ -2483,7 +2531,6 @@ div.hero-btn {
 
 .service-item:hover {
   transform: translateY(-50px);
-
 }
 
 .text-align-feature:hover {
@@ -3209,7 +3256,6 @@ img {
   .sidebar {
     margin-top: 45px;
   }
-
 }
 
 .sidebar .sidebar-widget {
@@ -3485,9 +3531,9 @@ a.social-icon:hover {
   margin-top: 60px;
   padding: 0 30px;
 }
-.footer .copyright .copyright col-sm-12{
+.footer .copyright .copyright col-sm-12 {
   background: #b6d7a8;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 50px;
   text-align: center;
   position: absolute;
@@ -3495,7 +3541,7 @@ a.social-icon:hover {
   left: 0px;
   padding-top: 20px;
   width: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
 }
 
@@ -3528,7 +3574,6 @@ a.social-icon:hover {
 }
 
 @media (max-width: 767.98px) {
-
   .footer .copyright p,
   .footer .copyright .col-md-6:last-child p {
     margin: 5px 0;
