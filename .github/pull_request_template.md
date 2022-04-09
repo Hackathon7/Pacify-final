@@ -16,6 +16,7 @@ Make sure you have done your changes in a separate branch. Branches MUST have de
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my code
 - [ ] Please ensure that there aren't other open [Pull Requests](../../../pulls) for the same update/change/feature/bugs?
+- [ ] The title  pull request is a short description of the proposed changes.
 
  ## Screenshots
  add relevant files related to issue fixed
