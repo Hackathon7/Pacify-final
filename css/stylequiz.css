@@ -44,10 +44,13 @@ body {
   padding-bottom: 5px;
   border-radius: 20px;
 }
-//when user
+
+/* when user */
+
 .questions .option.disabled{
   pointer-events: none;
 }
+
 #btn {
   background-color: white;
   color: #006622;
