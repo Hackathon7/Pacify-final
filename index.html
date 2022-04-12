@@ -32,7 +32,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
-
+        <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
 
         <!-- Template Stylesheet -->
         <link href="style.css" rel="stylesheet">
@@ -418,7 +418,15 @@
 
 
     <!-- Footer End -->
-
+    
+    <!--nav to top-->
+     <div id="navtotop" class = "fadeout">
+        <a href = "#top">
+          <button id = "navtop">
+          <i class = "material-icons">arrow_upward</i>  
+          </button>
+        </a>
+    </div>
 
     <!-- JavaScript Libraries -->
     <script src="scripts/jquery-3.4.1.min.js"></script>
@@ -436,6 +444,21 @@
     <!-- Template Javascript -->
     <script src="main.js"></script>
     
+     <!--nav to top-->
+  <script>
+    navtotop = document.getElementById("navtotop");
+
+    var navToTop = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+      navtotop.className = "fadein"
+    } 
+    else {
+      navtotop.className = "fadeout"
+   }
+   } ;
+  window.addEventListener("scroll", navToTop);
+  </script>
 
 
     <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
