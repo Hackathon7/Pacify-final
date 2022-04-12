@@ -2932,6 +2932,16 @@ div.hero-btn {
 .about-img {
   text-align: center;
 }
+#about-link{
+  font-size: 18px;
+  color: #006622;
+  cursor: pointer;
+}
+#about-link:hover{
+  transition: none;
+  color: red;
+  text-decoration: underline;
+}
 
 img {
   width: 60%;
