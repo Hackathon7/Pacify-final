@@ -229,3 +229,17 @@ input[class^='btn-']:hover {
   text-decoration: underline;
   text-decoration-color: #E6FFEE;
 }
+
+i {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #E6FFEE;
+  font-size: 75px;
+  transition: all 0.4s ease;
+}
+
+i:hover {
+  color: white;
+  cursor: pointer;
+}

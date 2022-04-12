@@ -84,3 +84,17 @@ a:hover {
 .button:focus {
     outline: none;
 }
+
+i {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: black;
+    font-size: 75px;
+    transition: all 0.4s ease;
+  }
+  
+  i:hover {
+    color: gray;
+    cursor: pointer;
+  }
