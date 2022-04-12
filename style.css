@@ -1127,6 +1127,9 @@ img {
   position: relative;
   padding: 45px 60px 0 60px;
 }
+.single li{
+  text-align: left;
+}
 
 .single .single-content {
   padding: 0 30px 0px 30px;
