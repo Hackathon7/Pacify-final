@@ -3382,9 +3382,17 @@ img {
   margin-left: 10px;
 }
 
-a.social-icon:hover {
-  color: #fff;
+.social-icon i{
+  padding: 6px;
 }
+.footer .social-icon i:hover {
+  transition: all 0.6s ease-in-out;
+  color: #006622;
+  background-color: white;
+  border-radius: 50px;
+}
+
+
 
 .footer .icons {
   text-align: center;
