@@ -9,9 +9,14 @@
         <title>PaciFy</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+        <!-- Live Chatbot -->
+        <script src="./chatwoot.js"></script>
+
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
             rel="stylesheet">
+            <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- CSS Libraries -->
         <link rel="stylesheet"
@@ -27,6 +32,8 @@
         <link href="../css/flaticon.css" rel="stylesheet">
         <link href="../css/owl.carousel.min.css" rel="stylesheet">
         <link href="../css/lightbox.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="like.css" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
 
@@ -79,7 +86,7 @@
                         <h3> “There is hope, even when your brain tells you there isn't.” </h3>
                     </div>
                     </div>
-
+                
                     <!-- Navbar ends -->
 
     <!-- Page Header Start -->
@@ -93,6 +100,7 @@
             </div>
         </div>
     </div>
+
     <!-- Page Header End -->
 
     <!-- Single Post Start-->
@@ -302,11 +310,13 @@
             </div>
         </div>
     </div>
+</div>
+</div>
     <!-- Single Post End-->
 
     <!-- Footer Start -->
     <footer>
-        <div class="footer wow fadeIn" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name: none;">
+        <div class="footer wow fadeIn" data-wow-delay="0.3s" style="animation-delay: 0.3s; visibility: visible;">
 
             <div class="container copyright">
                 <div class="row">
@@ -319,7 +329,7 @@
                         <a class="social-icon" href=""><i class="fa-brands fa-instagram"></i></a>
                         <a class="social-icon" href=""><i class="fa-solid fa-envelope"></i></a>
                     </div>
-                    <div class=" team col-md-4">
+                    <div class="team col-md-4">
                         <p>Team - Mind Bogglers</p>
                     </div>
                     <div class="copyright col-sm-12">
@@ -333,7 +343,19 @@
 
     <!-- Footer End -->
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!--nav to top-->
+    <div id="navtotop" class="fadeout">
+        <a href="#top">
+            <button id="navtop">
+                <i class="material-icons">arrow_upward</i>
+            </button>
+        </a>
+    </div>
+
+
+    <!-- Footer End -->
+
+    
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -350,6 +372,25 @@
 
     <!-- Template Javascript -->
     <script src="../main.js"></script>
+    <script src="like.js"></script>
+    
+
+    <!--nav to top-->
+    <script>
+        navtotop = document.getElementById("navtotop");
+
+        var navToTop = function () {
+            var y = window.scrollY;
+            if (y >= 100) {
+                navtotop.className = "fadein"
+            }
+            else {
+                navtotop.className = "fadeout"
+            }
+        };
+        window.addEventListener("scroll", navToTop);
+    </script>
+
 
     
 </body>

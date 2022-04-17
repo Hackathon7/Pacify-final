@@ -455,9 +455,9 @@ div.hero-btn {
   color: #ffffff;
 }
 
-.page-header a::after {
+.page-header a:after {
   position: absolute;
-  content: "/";
+ 
   width: 8px;
   height: 8px;
   top: -2px;
@@ -2260,7 +2260,7 @@ div.hero-btn {
   position: relative;
   padding: 0 12px;
   font-size: 22px;
-  color: #343148;
+  color: white;
 }
 
 .page-header a:hover {
@@ -2269,7 +2269,7 @@ div.hero-btn {
 
 .page-header a::after {
   position: absolute;
-  content: "/";
+/* content: "/"; */
   width: 8px;
   height: 8px;
   top: -2px;
