@@ -2364,11 +2364,6 @@ div.hero-btn {
   height: 350px;
   object-fit: cover;
   margin-right: 50px;
-  transition: 0.5s;
-}
-
-.about .about-img img:hover{
-  transform: scale(1.05);
 }
 
 .about .about-text p {
