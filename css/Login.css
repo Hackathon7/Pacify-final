@@ -25,13 +25,16 @@
   transform: rotate(360deg);
 }
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e6ffee;
   font-family: "Nunito", sans-serif;
+}
+.password-conatiner{
+  display: inline-block;
 }
 
 input,
@@ -241,6 +244,7 @@ button {
   -webkit-transform: translateX(520px);
   transform: translateX(520px);
 }
+
 
 .img-text.m-in {
   -webkit-transform: translateX(-520px);
