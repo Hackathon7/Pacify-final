@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -380,8 +385,8 @@ div.hero-btn {
 /*******************************/
 .page-header {
   position: relative;
-  margin-bottom: 45px;
-  padding: 150px 0 90px 0;
+  /* margin-bottom: 45px; */
+  padding-top: 100px;
   text-align: center;
   background: #e6ffee;
 }
@@ -389,11 +394,13 @@ div.hero-btn {
 .page-header h2 {
   position: relative;
   color: #343148;
-  font-size: 60px;
+  font-size: 2.5rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 .title-word {
   animation: color-animation 4s linear infinite;
+  font-size: 3.5rem;
 }
 
 .title-word-1 {
@@ -444,39 +451,11 @@ div.hero-btn {
   }
 }
 
-.page-header a {
-  position: relative;
-  padding: 0 12px;
-  font-size: 22px;
-  color: #343148;
-}
-
-.page-header a:hover {
-  color: #ffffff;
-}
-
-.page-header a:after {
-  position: absolute;
- 
-  width: 8px;
-  height: 8px;
-  top: -2px;
-  right: -7px;
-  text-align: center;
-  color: #343148;
-}
-
-.page-header a:last-child::after {
-  display: none;
-}
-
-/* .aboutfoot{
-  background-color:#009933;
-  color:#ffffff;
-  text-shadow: 2px 2px 5px #ffffff;
-} */
-
 @media (max-width: 767.98px) {
+  .title-word {
+      animation: color-animation 4s linear infinite;
+      font-size: 2.5rem;
+    }
   .page-header h2 {
     font-size: 35px;
   }
@@ -1120,7 +1099,7 @@ div.hero-btn {
 /******* Single Post CSS *******/
 /*******************************/
 
-.about-img {
+/* .about-img {
   text-align: center;
 }
 
@@ -1128,6 +1107,15 @@ img {
   width: 60%;
   vertical-align: middle;
   border-style: none;
+} */
+.about-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-img img{
+  width: 100%;
+  height: auto;
 }
 
 .single {
@@ -1379,6 +1367,9 @@ img {
 .single .comment-form textarea {
   border-radius: 0;
 }
+.content{
+  text-align: left;
+}
 
 .single .comment-form .btn {
   padding: 15px 30px;
@@ -1565,7 +1556,8 @@ img {
 /*******************************/
 .footer {
   position: relative;
-  margin-top: 45px;
+  /* margin-top: 45px; */
+  margin-bottom: 45px;
   background: #006622;
 }
 
@@ -2175,126 +2167,6 @@ div.hero-btn {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0;
-  }
-}
-
-/*******************************/
-/******* Page Header CSS *******/
-/*******************************/
-.page-header {
-  position: relative;
-  margin-bottom: 45px;
-  padding: 150px 0 90px 0;
-  text-align: center;
-  background: #e6ffee;
-}
-
-.page-header h2 {
-  position: relative;
-  color: #343148;
-  font-size: 40px;
-  font-weight: 700;
-}
-.page-header .about-img img {
-  position: relative;
-  border-radius: 100%;
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  margin-right: 50px;
-}
-
-.title-word {
-  animation: color-animation 4s linear infinite;
-}
-
-.title-word-1 {
-  --color-1: #df8453;
-  --color-2: #3d8dae;
-  --color-3: #e4a9a8;
-}
-
-.title-word-2 {
-  --color-1: #dbad4a;
-  --color-2: #accfcb;
-  --color-3: #17494d;
-}
-
-.title-word-3 {
-  --color-1: #accfcb;
-  --color-2: #e4a9a8;
-  --color-3: #accfcb;
-}
-
-.title-word-4 {
-  --color-1: #3d8dae;
-  --color-2: #df8453;
-  --color-3: #e4a9a8;
-}
-
-@keyframes color-animation {
-  0% {
-    color: var(--color-1);
-  }
-  32% {
-    color: var(--color-1);
-  }
-  33% {
-    color: var(--color-2);
-  }
-  65% {
-    color: var(--color-2);
-  }
-  66% {
-    color: var(--color-3);
-  }
-  99% {
-    color: var(--color-3);
-  }
-  100% {
-    color: var(--color-1);
-  }
-}
-
-.page-header a {
-  position: relative;
-  padding: 0 12px;
-  font-size: 22px;
-  color: white;
-}
-
-.page-header a:hover {
-  color: #ffffff;
-}
-
-.page-header a::after {
-  position: absolute;
-/* content: "/"; */
-  width: 8px;
-  height: 8px;
-  top: -2px;
-  right: -7px;
-  text-align: center;
-  color: #343148;
-}
-
-.page-header a:last-child::after {
-  display: none;
-}
-
-/* .aboutfoot{
-  background-color:#009933;
-  color:#ffffff;
-  text-shadow: 2px 2px 5px #ffffff;
-} */
-
-@media (max-width: 767.98px) {
-  .page-header h2 {
-    font-size: 35px;
-  }
-
-  .page-header a {
-    font-size: 18px;
   }
 }
 
@@ -3591,7 +3463,7 @@ img {
   opacity: 0;
 }
 #navtop {
-  background: #536503;
+  background:#006622;
   outline: none;
   border: none;
   position: fixed;
@@ -3600,4 +3472,7 @@ img {
   height: 55px;
   width: 55px;
   border-radius: 30px;
+}
+#navtop i{
+  color: #eee;
 }
