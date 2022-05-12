@@ -29,6 +29,10 @@
         <link href="css/flaticon.css" rel="stylesheet">
         <link href="css/owl.carousel.min.css" rel="stylesheet">
         <link href="css/lightbox.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
@@ -294,14 +298,123 @@
     <br>
 
     <!-- Blog Start -->
-    <div id="articles" class="blog">
+    <div id="articles" class="blogs">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
 
 
                 <h2 style="font-size:29px;">Suggested Mental Health Articles to Read</h2>
             </div>
-            <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images file/carousel_image_1_modified.jpeg"
+                            alt="Blog" style = "width: 100%; height: auto">
+                        <div class="carousel-caption">
+                            <div class="blog-text">
+                                <h2>Too much sitting could hurt your mental health</h2>
+                                
+                                <p>
+                                    Depression is quite common in teens. New data now point to a surprising risk factor: too
+                                    much sitting around. The risk seems to be greater for sedentary activities that don’t
+                                    challenge the mind.
+                                
+                                </p>
+                                <a class="btn" href="https://www.sciencenewsforstudents.org/article/too-much-sitting-could-hurt-mental-health">Read
+                                    More <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            
+                    </div>
+            
+                    <div class="item">
+                        <img src="images file/carousel_image_2_modified.png" style = "width: 100%; height: auto" >
+                        <div class="carousel-caption">
+                            <div class="blog-text">
+                                <h2>Mental Health Disorders and Children</h2>
+                            
+                                <p>
+                                    Children may develop mental illnesses just as adults do, but the symptoms may be difficult
+                                    to pick up. This results in unnecessary treatment delays in many cases.
+                            
+                                </p>
+                                <a class="btn" href="https://www.news-medical.net/health/Mental-Health-Disorders-and-Children.aspx">Read
+                                    More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="item">
+                        <img src="images file/carousel_image_3_modified.png" alt="New york" style = "width: 100%;">
+                        <div class="carousel-caption">
+                                <div class="blog-text">
+                                    <h2>The State Of Mental Health In America
+                                    </h2>
+                                
+                                    <p>
+                                        Youth mental health is worsening; Suicidal thoughts among adults are increasing; The number
+                                        of people looking for help with anxiety and depression has skyrocketed. </p>
+                                    <a class="btn" href="https://mhanational.org/issues/state-mental-health-america">Read More <i
+                                            class="fa fa-angle-right"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images file/carousel_image_4_modified.jpeg"
+                            alt="Blog" style = "width: 100%;">
+                        <div class="carousel-caption">
+                            <div class="blog-text">
+                                <h2>Connection Between Mental and Physical Health
+                                </h2>
+                            
+                                <p>
+                                    For years, researchers have been asking a complex question — how do mental and physical
+                                    health interact? The answer is complicated... </p>
+                                <a class="btn" href="https://hside.org/link-between-physical-and-mental-health/">Read More <i
+                                        class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="item">
+                        <img src="images file/carousel_image_5_modified.jpg" alt="Blog" style ="width: 100%;">
+                        <div class="carousel-caption">
+                            <div class="blog-text">
+                                <h2>10 Top Tips for Good Mental Health</h2>
+                            
+                                <p>
+                                    An important part of keeping fit and healthy is to take care of your own mental health.
+                                    There are plenty of things you can do to help make sure you keep yourself mentally healthy.
+                            
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            </div>
+
+            <!-- <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="blog-item">
                     <div class="blog-img">
                         <img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2021/04/1030_kk_sitting_risks_mental_health_feat.jpg"
@@ -317,7 +430,6 @@
                             challenge the mind.
 
                         </p>
-                        <!-- ************************************* -->
                         <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
                         <a class="btn"
                             href="https://www.sciencenewsforstudents.org/article/too-much-sitting-could-hurt-mental-health">Read
@@ -394,7 +506,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Blog End -->
