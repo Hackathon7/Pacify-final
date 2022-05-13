@@ -20,7 +20,11 @@ let questions = [
     question:
       "Are you having trouble getting to sleep and staying asleep? Or are you finding it hard to get up in the morning?",
 
-    options: ["Never", "Occasionally", "Often (2-3 times a week )", "Always"],
+    options: [
+      "Never", 
+      "Occasionally", 
+      "Often (2-3 times a week )",
+      "Always"],
   },
   {
     id: 3,
@@ -60,7 +64,7 @@ let questions = [
   {
     id: 6,
     question:
-      "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "Trouble concentrating on things, such as reading the newspaper, books, articles or watching television",
 
     options: [
       "Never",
