@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #006622 ;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top:40px;
+  transition: box-shadow .3s;
+  
+  
+}
+.card:hover{box-shadow: 0 12px 20px rgba(0, 0, 0, 0.24),0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.24),0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  width: 500px;
+  margin-bottom: 40px;
+
+  height: 590px;
+ 
+}
+.card-header img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+ 
+}
+.card:hover {
+  box-shadow: 0 0.25em 0.25em -0.1em #fff;
+    box-shadow: 0 0.25em 0.25em -0.1em #b5c952;
+    transform: translateY(-1.75em);
+    border-color: #006622 ;
+    transition: 0.4s;
+    color: #006622 ;
+    text-decoration:wavy;
+  
+}
+.tag {
+  background: #cccccc;
+  border-radius: 60px;
+  font-size: 16px;
+  margin: 0;
+  color: #fff;
+  padding: 3px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  float:right;
+  margin-left: 170px;
+}
+.tag-green {
+  background-color: #006622;
+}
+.tag:hover{
+ background-color: #fff;
+  color:#006622;
+  border-color: #006622;
+  border-radius: 1px; 
+  border-style: inset;
+
+}
+
+.card-body p {
+  font-size: 18px;
+  margin: 0 0 40px;
+}
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.user-info h5 {
+  margin: 0;
+}
+.user-info small {
+  color: #545d7a;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #034d09;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #034d09;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #034d09;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #02840d;
+}
