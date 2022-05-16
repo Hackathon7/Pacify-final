@@ -71,6 +71,11 @@
             <a href="../index.html#feature" class="nav-item nav-link">Features</a>
             <a href="../index.html#yoga" class="nav-item nav-link"> Yoga Poses</a>
             <a href="../index.html#articles" class="nav-item nav-link">Articles</a>
+            <p>
+
+              <img style="width: 50px;border-radius:100px" src="https://i.ibb.co/wzzTS9m/114-1149878-setting-user-avatar-in-specific-size-without-breaking.jpg" id="userAvatar" />
+            </p>
+            <p id="userName" class="nav-item nav-link"></p>
           </div>
         </div>
       </div>
@@ -83,11 +88,11 @@
           <form>
             <label>
               <span>Email Address</span>
-              <input type="email" name="email" required>
+              <input id="loginEmail" type="email" name="email" required>
             </label>
             <label>
               <span>Password</span>
-              <input type="password" name="password" id ="password" required>
+              <input id="loginPsd" type="password" name="password"  required>
             </label>
                 <label id="password-show">
                       <input type="checkbox" onclick="showPassword()">
@@ -95,7 +100,7 @@
                 
                 </label>
              
-            <button class="submit" type="submit">Sign In</button>
+            <button id="loginBtn" class="submit" type="submit">Sign In</button>
           </form>
           <p class="forgot-pass">Forgot Password ?</p>
 
@@ -139,17 +144,15 @@
                     
                         <label>
                           <span>Email</span>
-                          <input type="email" required>
+                          <input id="Signemail" type="email" required>
                         </label>
                         <label>
                           <span>Password</span>
-                            <input type="password" class ="pwd" required>
+                            <input id="SignPsd" type="password" class ="pwd" required>
                         <label>
-                          <span>Confirm Password</span>
-                          <input type="password" id ="pwd" required>
-                        </label>
+                         
 
-                        <button type="submit" class="submit">Sign Up Now</button>
+                        <button id="signBtn" type="submit" class="submit">Sign Up Now</button>
             </form>
           </div>
         </div>
@@ -168,4 +171,82 @@
         }
     </script>
   </body>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+    import {getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD6aIUCVobRIiW93f9R-qWuOmDNcem8CRg",
+      authDomain: "pacify-d7d5b.firebaseapp.com",
+      projectId: "pacify-d7d5b",
+      storageBucket: "pacify-d7d5b.appspot.com",
+      messagingSenderId: "1009426380494",
+      appId: "1:1009426380494:web:3438da6950e11f0771829f"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+
+    document.getElementById('signBtn').addEventListener('click',(e) => {
+      e.preventDefault();
+      const auth = getAuth();
+      const email = document.getElementById('Signemail').value;
+      const password = document.getElementById('SignPsd').value;
+
+      createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        alert('Sucess')
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage)
+      });
+    })
+
+    document.getElementById('loginBtn').addEventListener('click',(e) => {
+      e.preventDefault();
+      const auth = getAuth();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPsd').value
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          alert(user.email+" has Logged In Successfully")
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert(errorMessage)
+        });
+
+    })
+
+
+    const auth = getAuth();
+    const user = auth.currentUser;
+    var name = " ";
+    
+    onAuthStateChanged(auth, (user) => {
+      if(user){
+        const uid = user.uid;
+        console.log(user)
+        name = user.email;
+       
+        console.log(name)
+        localStorage.setItem("email", name)
+        if(user.displayName == null || user.photoURL == null){
+          document.getElementById('userName').innerHTML = user.email;
+          document.getElementById('userAvatar').src = 'https://i.ibb.co/wzzTS9m/114-1149878-setting-user-avatar-in-specific-size-without-breaking.jpg'
+         
+        }else{
+          document.getElementById('userAvatar').src = user.photoURL;
+          document.getElementById('userName').innerHTML = user.displayName;
+        }
+        
+      }
+    })
+   
+   
+  </script>
 </html>

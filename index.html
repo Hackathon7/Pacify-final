@@ -67,6 +67,7 @@
                     <a href="#yoga" class="nav-item nav-link"> Yoga Poses</a>
                     <a href="#articles" class="nav-item nav-link">Articles </a>
                     <a href="html/Login.html" target="_blank" class="nav-item nav-link">Login</a>
+                    <p id="userEmail" class="nav-item nav-link"></p>
 
                 </div>
             </div>
@@ -607,5 +608,10 @@
         </div>
     </div>
 </body>
+<script>
+    document.getElementById('userEmail').innerHTML = localStorage.getItem("email")
+    console.log(email)
+</script>
+
 
 </html>
