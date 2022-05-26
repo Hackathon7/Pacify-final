@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    margin: 10rem 0;
+    padding: 0 1rem;
+}
+.introduction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.personality-traits{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.personality-traits h1{
+    text-align: center;
+    padding: 1rem 0;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    place-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    padding: 1.5rem;
+    width: 350px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+    text-align: justify;
+}
+.characteristics h2{
+    text-align: center;
+}
+.characteristics li{
+    list-style-type: square;
+}
+.high{
+    color: green;
+}
+.low{
+    color: red;
+}
+@media(max-width: 600px){
+    .characteristics{
+        padding: 0 1rem;
+    }
+}
