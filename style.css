@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Slabo+27px&family=Source+Sans+Pro:wght@200&family=Tiro+Tamil&family=Varela+Round&family=Zilla+Slab:wght@300&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -1983,10 +1984,10 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
   transition: all 0.5s ease-in-out;
-  background-color: white;
+  /* background-color: white;
   color: #006622;
   border-radius: 30px 0px 30px 0px;
-  transform: scale(1.17);
+  transform: scale(1.17); */
 }
 
 .navbar .dropdown-menu {
@@ -3498,4 +3499,51 @@ img {
 }
 #navtop i{
   color: #eee;
+}
+#navbar{
+    padding: 10px 0px;
+    border-radius: 0px;
+}
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+   margin-right: 0;
+   margin-left: 0;
+}
+#logo{
+  margin: 0px 16px;
+}
+#logo img {
+  width: 56px;
+  margin: 0px 10px;
+  height: 56px;
+  border-radius: 50px;
+}
+.navbar-brand {
+  height: 50px;
+  padding: 20px 15px;
+  margin-left: 6px;
+}
+#navbarCollapse{
+  padding-left: 165px;
+  padding-right: 0px;
+}
+#mynav{
+  align-items: center;
+  width: 117%;
+}
+#mynav a{
+  font-family: 'Tiro Tamil', serif !important;
+  text-transform: none;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 0px 18px;
+    margin: 0px 0px;
+    color: #ffffff;
+}
+#mynav a:hover{
+  transition: all 0.3s ease-in;
+  color: rgb(255, 173, 20);
+  background: #006622;
 }
