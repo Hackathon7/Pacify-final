@@ -1,0 +1,129 @@
+body {
+	font-family: 'Roboto', sans-serif;
+  background-color: #e9ffdb;
+    
+ 
+}
+.head{
+
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.1); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px; 
+  border-radius: 25px;
+
+}
+.content{
+	color: #000000;
+}
+
+.conatiner {
+	width: 70%;
+	height: 500px;
+  margin: auto;
+}
+.wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.box {
+	margin: 40px;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	border-radius: 10px;
+	-webkit-transition: 200ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.box:hover {
+	margin-bottom: -10px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+
+
+.one {
+	background: url('../Music-img/1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.two {
+	background: url('../Music-img/2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.three {
+	background: url('../Music-img/3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.four {
+	background: url('../Music-img/4.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.five {
+	background: url('../Music-img/5.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.six {
+	background: url('../Music-img/6.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.seven {
+	background: url('../Music-img/7.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.eight {
+	background: url('../Music-img/8.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.nine {
+	background: url('../Music-img/9.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+body {
+    background-color: #e9ffdb;
+    font: normal 1em / 1.5em BlinkMacSystemFont, -apple-system, 'Segoe UI', roboto, helvetica, arial, sans-serif;
+ }
+
+
+audio {
+    display:block;
+    margin: auto;
+    width: 500px;
+    
+ }
+ .head{
+
+    
+  
+    width: 100%;
+    padding: 20px; 
+   
+  
+  }
+ 
+
+.conatiner {
+	width: 70%;
+	height: 500px;
+  margin: auto;
+}
+
+  
+
+ .wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+            
+    
+}
+
+.box {
+
+	width: 500px;
+	height: 400px;
+	text-align: center;
+	border-radius: 10px;
+	-webkit-transition: 200ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            
+}
+.one {
+	background: url('../Music-img/4.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
