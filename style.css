@@ -1635,7 +1635,7 @@ img {
 .footer {
     position: relative;
     /* margin-top: 45px; */
-    margin-bottom: 45px;
+    margin-bottom: 0px;
     background: #006622;
 }
 
@@ -1743,8 +1743,8 @@ a.social-icon:hover {
 }
 
 .footer .copyright {
-    margin-top: 60px;
-    padding: 0 30px;
+    margin-top: 50px;
+    padding: 0 0px;
 }
 
 .footer .copyright .row {
