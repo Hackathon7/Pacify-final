@@ -25,7 +25,7 @@ healthy mindset.
 Pacify provides various features:
 
 - **_Quiz_:** The quiz section helps you discover about the mental health problems you are currently dealing with by asking some questions regarding your daily 
-behaviour, actions and feelings.
+behavior, actions and feelings.
 
 - **_Journal_:** Journaling can help reduce anxiety, lessen feelings of stress, and increase an individual's mental well-being. You can use the journal to write 
 down your thoughts, feelings and emotions as it can free up your mind and re-install calmness.
@@ -151,11 +151,11 @@ You can use github explore - https://github.com/explore to find a project that i
 
 <p align="center">  <img  src="https://i.imgur.com/P0n6f97.png">  </p>
 
-Click on fork to create a copy of project to your account. This creates a separate copy for you to workon.
+Click on fork to create a copy of project to your account. This creates a separate copy for you to work on.
 
 ### FINDING A FEATURE OR BUG TO WORKON - 
 
-Open Source projects always have something to workon and improves with each new release. You can see the issues section to find something you can solve or report a bug. The project managers always welcome new contributors and can guide you to solve the problem. You can find issues in the right section of project page.
+Open Source projects always have something to work on and improves with each new release. You can see the issues section to find something you can solve or report a bug. The project managers always welcome new contributors and can guide you to solve the problem. You can find issues in the right section of project page.
 
 <p align="center">  <img  src="https://i.imgur.com/czVjpS7.png">  </p>
 
